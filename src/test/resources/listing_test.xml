@@ -1,0 +1,1528 @@
+<REProperties>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>Central Air</AirConditioning>
+			<Acreage>&lt; .49</Acreage>
+			<RemarksForClients>Sold &quot;As Is&quot;..  Situated At The End Of The Cul De Sac.  Surrounded By Greenery - Reverse Ravine - Approx 3000 Sq With Large Principal Rooms, Build  A Luxury Home In This Prestige Location.Elegant Front Door Entrance. Retro Ceramic Flooring In Entrance.</RemarksForClients>
+			<Address>35 Bearwood Dr</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>3</Washrooms>
+			<Bedrooms>5</Bedrooms>
+			<BedroomsPlus>null</BedroomsPlus>
+			<Basement1>Unfinished</Basement1>
+			<Basement2>null</Basement2>
+			<CableTVIncluded>null</CableTVIncluded>
+			<CacIncluded>null</CacIncluded>
+			<CommonElementsIncluded>null</CommonElementsIncluded>
+			<FrontingOnNSEW>S</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Edenbridge/North Drive</DirectionsCrossStreets>
+			<FamilyRoom>Y</FamilyRoom>
+			<LotDepth>132.88</LotDepth>
+			<Drive>Pvt Double</Drive>
+			<UtilitiesHydro>Y</UtilitiesHydro>
+			<Elevator>N</Elevator>
+			<Extras>Range, B I D W, B I Oven, Frig, Carpeting W L,. Window Coverings, E L F, Excl Chandelier In Dr, Front Hall Fixture, Hanging Fixture In Front Hall &amp; Ceiling Fan In M Br.., Gas Furnace 2007 High Efficiency, C A C,, H W T (R),Roof 8 Yrs,</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>Y</FireplaceStove>
+			<LotFront>125.32</LotFront>
+			<HeatSource>Gas</HeatSource>
+			<GarageType>Attached</GarageType>
+			<UtilitiesGas>Y</UtilitiesGas>
+			<HeatIncluded>null</HeatIncluded>
+			<HeatType>Forced Air</HeatType>
+			<HydroIncluded>null</HydroIncluded>
+			<LotIrregularities>125.32 X 132.88 West Side, 125.64 East S</LotIrregularities>
+			<LegalDescription>Pcl 28-1,Sec M1303;Lot 28 Pl M1303</LegalDescription>
+			<Level1>Ground</Level1>
+			<Level2>Ground</Level2>
+			<Level3>Ground</Level3>
+			<Level4>Ground</Level4>
+			<Level5>Main</Level5>
+			<Level6>2nd</Level6>
+			<Level7>2nd</Level7>
+			<Level8>2nd</Level8>
+			<Level9>2nd</Level9>
+			<LotSizeCode>Feet</LotSizeCode>
+			<ListPrice>1600000.00</ListPrice>
+			<MLS>W3734317</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId>074880191</ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>6</ParkingSpaces>
+			<Pool>None</Pool>
+			<ParkingIncluded>null</ParkingIncluded>
+			<ListBrokerage>TORONTO WEST REALTY INC., BROKERAGE</ListBrokerage>
+			<Room1Length>4.50</Room1Length>
+			<Room1>Living</Room1>
+			<Room1Width>6.00</Room1Width>
+			<Room2Length>4.59</Room2Length>
+			<Room2>Dining</Room2>
+			<Room2Width>3.80</Room2Width>
+			<Room3Length>6.20</Room3Length>
+			<Room3>Kitchen</Room3>
+			<Room3Width>3.30</Room3Width>
+			<Room4Length>1.83</Room4Length>
+			<Room4>Laundry</Room4>
+			<Room4Width>3.85</Room4Width>
+			<Room5Length>5.40</Room5Length>
+			<Room5>Family</Room5>
+			<Room5Width>4.00</Room5Width>
+			<Room6Length>4.94</Room6Length>
+			<Room6>Master</Room6>
+			<Room6Width>4.60</Room6Width>
+			<Room7Length>4.00</Room7Length>
+			<Room7>2nd Br</Room7>
+			<Room7Width>4.30</Room7Width>
+			<Room8Length>5.30</Room8Length>
+			<Room8>3rd Br</Room8>
+			<Room8Width>3.20</Room8Width>
+			<Room9Length>5.40</Room9Length>
+			<Room9>4th Br</Room9>
+			<Room9Width>3.06</Room9Width>
+			<Rooms>10</Rooms>
+			<RoomsPlus>2</RoomsPlus>
+			<SaleLease>Sale</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>3000-3500</ApproxSquareFootage>
+			<StreetName>Bearwood</StreetName>
+			<StreetDirection>null</StreetDirection>
+			<Street>35</Street>
+			<StreetAbbreviation>Dr</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>2-Storey</Style>
+			<Taxes>7031.09</Taxes>
+			<VirtualTourURL>null</VirtualTourURL>
+			<Assessment>1271000</Assessment>
+			<Uffi>No</Uffi>
+			<UtilitiesCable>Y</UtilitiesCable>
+			<UtilitiesTelephone>Y</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>N</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>null</WaterIncluded>
+			<WashroomsType1Pcs>2</WashroomsType1Pcs>
+			<WashroomsType2Pcs>5</WashroomsType2Pcs>
+			<WashroomsType3Pcs>4</WashroomsType3Pcs>
+			<WashroomsType4Pcs>null</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>1</WashroomsType3>
+			<WashroomsType4>null</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>2016</TaxYear>
+			<ApproxAge>31-50</ApproxAge>
+			<PostalCode>M9A4G5</PostalCode>
+			<Zoning>Residential</Zoning>
+			<TypeOwnSrch>D.</TypeOwnSrch>
+			<TypeOwn1Out>Detached</TypeOwn1Out>
+			<Exterior1>Brick</Exterior1>
+			<Exterior2>null</Exterior2>
+			<PropertyFeatures1>Cul De Sac</PropertyFeatures1>
+			<PropertyFeatures2>Grnbelt/Conserv</PropertyFeatures2>
+			<OtherStructures1>null</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Sunken Room</Room1Desc1>
+			<Room1Desc2>Fireplace</Room1Desc2>
+			<Room1Desc3>Bay Window</Room1Desc3>
+			<Room2Desc1>Separate Rm</Room2Desc1>
+			<Room2Desc2>Hardwood Floor</Room2Desc2>
+			<Room2Desc3>Bay Window</Room2Desc3>
+			<Room3Desc1>W/O To Patio</Room3Desc1>
+			<Room3Desc2>B/I Appliances</Room3Desc2>
+			<Room3Desc3>Double Closet</Room3Desc3>
+			<Room4Desc1>W/O To Garage</Room4Desc1>
+			<Room4Desc2>Closet</Room4Desc2>
+			<Room4Desc3>Pantry</Room4Desc3>
+			<Room5Desc1>O/Looks Garden</Room5Desc1>
+			<Room5Desc2>Fireplace</Room5Desc2>
+			<Room5Desc3>Broadloom</Room5Desc3>
+			<Room6Desc1>His/Hers Closets</Room6Desc1>
+			<Room6Desc2>5 Pc Ensuite</Room6Desc2>
+			<Room6Desc3>Broadloom</Room6Desc3>
+			<Room7Desc1>W/I Closet</Room7Desc1>
+			<Room7Desc2>Bay Window</Room7Desc2>
+			<Room7Desc3>Broadloom</Room7Desc3>
+			<Room8Desc1>W/I Closet</Room8Desc1>
+			<Room8Desc2>Bay Window</Room8Desc2>
+			<Room8Desc3>Broadloom</Room8Desc3>
+			<Room9Desc1>Broadloom</Room9Desc1>
+			<Room9Desc2>Double Closet</Room9Desc2>
+			<Room9Desc3>Bay Window</Room9Desc3>
+			<AssessmentYear>2016</AssessmentYear>
+			<GarageSpaces>2.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>114</Map>
+			<MapColumn>9</MapColumn>
+			<MapRow>M</MapRow>
+			<AllInclusive>null</AllInclusive>
+			<Furnished>null</Furnished>
+			<LaundryAccess>null</LaundryAccess>
+			<PrivateEntrance>null</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac>N</CentralVac>
+			<KitchensPlus>null</KitchensPlus>
+			<LaundryLevel>Main</LaundryLevel>
+			<PropertyFeatures3>Park</PropertyFeatures3>
+			<PropertyFeatures4>Public Transit</PropertyFeatures4>
+			<PropertyFeatures5>School</PropertyFeatures5>
+			<PropertyFeatures6>Terraced</PropertyFeatures6>
+			<Retirement>N</Retirement>
+			<Room10Desc1>Broadloom</Room10Desc1>
+			<Room10Desc2>Double Closet</Room10Desc2>
+			<Room10Desc3>Bay Window</Room10Desc3>
+			<Room10Length>4.38</Room10Length>
+			<Room10>5th Br</Room10>
+			<Room10Width>3.02</Room10Width>
+			<Room11Desc1>null</Room11Desc1>
+			<Room11Desc2>null</Room11Desc2>
+			<Room11Desc3>null</Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11>null</Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>null</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>null</Waterfront>
+			<WashroomsType5Pcs>null</WashroomsType5Pcs>
+			<WashroomsType1Level>Ground</WashroomsType1Level>
+			<WashroomsType2Level>2nd</WashroomsType2Level>
+			<WashroomsType3Level>2nd</WashroomsType3Level>
+			<WashroomsType4Level>null</WashroomsType4Level>
+			<WashroomsType5>null</WashroomsType5>
+			<WashroomsType5Level>null</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>2nd</Level10>
+			<Level11>null</Level11>
+			<Level12>null</Level12>
+			<TimestampSql>2017-03-21 13:02:09.0</TimestampSql>
+			<AreaCode>01</AreaCode>
+			<MunicipalityCode>01.W08</MunicipalityCode>
+			<CommunityCode>01.W08.0090</CommunityCode>
+			<MunicipalityDistrict>Toronto W08</MunicipalityDistrict>
+			<Area>Toronto</Area>
+			<Municipality>Toronto</Municipality>
+			<Community>Edenbridge-Humber Valley</Community>
+			<IdxUpdtedDt>2012-02-10 04:41:36.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-20 16:44:37.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>None</AirConditioning>
+			<Acreage>null</Acreage>
+			<RemarksForClients>Beautiful Bungalow With ** Registered Legal 2 Bdrm Basement Apartment **. Located In One Of The Most Sought After Communities In Rapidly Growing Newmarket. Oversized Premium Lot. Extended Driveway. This Bright Sun-Filled Home Is A Perfect Family Home For Anyone Looking For An Income Property.. Walking Distance To Shopping Centres And Upper Canada Mall.. *** Easy To Show; You Won&apos;t Be Disappointed! ***</RemarksForClients>
+			<Address>42 Millard Ave</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>2</Washrooms>
+			<Bedrooms>3</Bedrooms>
+			<BedroomsPlus>2</BedroomsPlus>
+			<Basement1>Apartment</Basement1>
+			<Basement2>Sep Entrance</Basement2>
+			<CableTVIncluded>null</CableTVIncluded>
+			<CacIncluded>null</CacIncluded>
+			<CommonElementsIncluded>null</CommonElementsIncluded>
+			<FrontingOnNSEW>S</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Yonge, S. Of Davis Dr/Hwy 9</DirectionsCrossStreets>
+			<FamilyRoom>N</FamilyRoom>
+			<LotDepth>125.00</LotDepth>
+			<Drive>Private</Drive>
+			<UtilitiesHydro>null</UtilitiesHydro>
+			<Elevator>null</Elevator>
+			<Extras>2 Fridge, 2 Stoves, Washer/Dryer, All Elf&apos;s, Garden Shed, Garage Door Opener And Remote</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>N</FireplaceStove>
+			<LotFront>60.00</LotFront>
+			<HeatSource>Gas</HeatSource>
+			<GarageType>Attached</GarageType>
+			<UtilitiesGas>null</UtilitiesGas>
+			<HeatIncluded>null</HeatIncluded>
+			<HeatType>Forced Air</HeatType>
+			<HydroIncluded>null</HydroIncluded>
+			<LotIrregularities></LotIrregularities>
+			<LegalDescription>Lt 66 Pl 430 Newmarket ; Newmarket</LegalDescription>
+			<Level1>Main</Level1>
+			<Level2>Main</Level2>
+			<Level3>Main</Level3>
+			<Level4>Main</Level4>
+			<Level5>Main</Level5>
+			<Level6>Main</Level6>
+			<Level7>Lower</Level7>
+			<Level8>Lower</Level8>
+			<Level9>Lower</Level9>
+			<LotSizeCode>Feet</LotSizeCode>
+			<ListPrice>899000.00</ListPrice>
+			<MLS>N3728648</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId></ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>6</ParkingSpaces>
+			<Pool>None</Pool>
+			<ParkingIncluded>null</ParkingIncluded>
+			<ListBrokerage>WOODSVIEW REALTY INC., BROKERAGE</ListBrokerage>
+			<Room1Length>5.13</Room1Length>
+			<Room1>Living</Room1>
+			<Room1Width>3.43</Room1Width>
+			<Room2Length>2.63</Room2Length>
+			<Room2>Kitchen</Room2>
+			<Room2Width>2.33</Room2Width>
+			<Room3Length>2.33</Room3Length>
+			<Room3>Breakfast</Room3>
+			<Room3Width>2.23</Room3Width>
+			<Room4Length>4.63</Room4Length>
+			<Room4>Master</Room4>
+			<Room4Width>3.03</Room4Width>
+			<Room5Length>3.60</Room5Length>
+			<Room5>2nd Br</Room5>
+			<Room5Width>2.63</Room5Width>
+			<Room6Length>3.60</Room6Length>
+			<Room6>3rd Br</Room6>
+			<Room6Width>3.43</Room6Width>
+			<Room7Length>4.13</Room7Length>
+			<Room7>4th Br</Room7>
+			<Room7Width>3.73</Room7Width>
+			<Room8Length>4.73</Room8Length>
+			<Room8>5th Br</Room8>
+			<Room8Width>3.03</Room8Width>
+			<Room9Length>3.93</Room9Length>
+			<Room9>Kitchen</Room9>
+			<Room9Width>3.83</Room9Width>
+			<Rooms>5</Rooms>
+			<RoomsPlus>4</RoomsPlus>
+			<SaleLease>Sale</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>null</ApproxSquareFootage>
+			<StreetName>Millard</StreetName>
+			<StreetDirection>null</StreetDirection>
+			<Street>42</Street>
+			<StreetAbbreviation>Ave</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>Bungalow</Style>
+			<Taxes>3996.67</Taxes>
+			<VirtualTourURL>null</VirtualTourURL>
+			<Assessment>null</Assessment>
+			<Uffi>null</Uffi>
+			<UtilitiesCable>null</UtilitiesCable>
+			<UtilitiesTelephone>null</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>Y</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>null</WaterIncluded>
+			<WashroomsType1Pcs>4</WashroomsType1Pcs>
+			<WashroomsType2Pcs>4</WashroomsType2Pcs>
+			<WashroomsType3Pcs>null</WashroomsType3Pcs>
+			<WashroomsType4Pcs>null</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>null</WashroomsType3>
+			<WashroomsType4>null</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>2016</TaxYear>
+			<ApproxAge>null</ApproxAge>
+			<PostalCode>L3Y1Y8</PostalCode>
+			<Zoning></Zoning>
+			<TypeOwnSrch>D.</TypeOwnSrch>
+			<TypeOwn1Out>Detached</TypeOwn1Out>
+			<Exterior1>Brick</Exterior1>
+			<Exterior2>Stone</Exterior2>
+			<PropertyFeatures1>null</PropertyFeatures1>
+			<PropertyFeatures2>null</PropertyFeatures2>
+			<OtherStructures1>null</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Hardwood Floor</Room1Desc1>
+			<Room1Desc2>Large Window</Room1Desc2>
+			<Room1Desc3>O/Looks Garden</Room1Desc3>
+			<Room2Desc1>Open Concept</Room2Desc1>
+			<Room2Desc2>Breakfast Bar</Room2Desc2>
+			<Room2Desc3>O/Looks Family</Room2Desc3>
+			<Room3Desc1>O/Looks Family</Room3Desc1>
+			<Room3Desc2>Large Window</Room3Desc2>
+			<Room3Desc3>O/Looks Garden</Room3Desc3>
+			<Room4Desc1>Hardwood Floor</Room4Desc1>
+			<Room4Desc2>Large Window</Room4Desc2>
+			<Room4Desc3>O/Looks Backyard</Room4Desc3>
+			<Room5Desc1>Hardwood Floor</Room5Desc1>
+			<Room5Desc2>Large Window</Room5Desc2>
+			<Room5Desc3>O/Looks Garden</Room5Desc3>
+			<Room6Desc1>Hardwood Floor</Room6Desc1>
+			<Room6Desc2>Large Window</Room6Desc2>
+			<Room6Desc3>W/O To Deck</Room6Desc3>
+			<Room7Desc1>Double Closet</Room7Desc1>
+			<Room7Desc2>Window</Room7Desc2>
+			<Room7Desc3></Room7Desc3>
+			<Room8Desc1>Double Closet</Room8Desc1>
+			<Room8Desc2>Window</Room8Desc2>
+			<Room8Desc3></Room8Desc3>
+			<Room9Desc1>O/Looks Family</Room9Desc1>
+			<Room9Desc2>Open Concept</Room9Desc2>
+			<Room9Desc3>Window</Room9Desc3>
+			<AssessmentYear>null</AssessmentYear>
+			<GarageSpaces>2.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>null</Map>
+			<MapColumn>null</MapColumn>
+			<MapRow></MapRow>
+			<AllInclusive>null</AllInclusive>
+			<Furnished>null</Furnished>
+			<LaundryAccess>null</LaundryAccess>
+			<PrivateEntrance>null</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac>null</CentralVac>
+			<KitchensPlus>1</KitchensPlus>
+			<LaundryLevel>null</LaundryLevel>
+			<PropertyFeatures3>null</PropertyFeatures3>
+			<PropertyFeatures4>null</PropertyFeatures4>
+			<PropertyFeatures5>null</PropertyFeatures5>
+			<PropertyFeatures6>null</PropertyFeatures6>
+			<Retirement>N</Retirement>
+			<Room10Desc1>Above Grade Window</Room10Desc1>
+			<Room10Desc2>Open Concept</Room10Desc2>
+			<Room10Desc3>Window</Room10Desc3>
+			<Room10Length>4.93</Room10Length>
+			<Room10>Family</Room10>
+			<Room10Width>3.83</Room10Width>
+			<Room11Desc1></Room11Desc1>
+			<Room11Desc2></Room11Desc2>
+			<Room11Desc3></Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11></Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>null</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>null</Waterfront>
+			<WashroomsType5Pcs>null</WashroomsType5Pcs>
+			<WashroomsType1Level>Main</WashroomsType1Level>
+			<WashroomsType2Level>Lower</WashroomsType2Level>
+			<WashroomsType3Level>null</WashroomsType3Level>
+			<WashroomsType4Level>null</WashroomsType4Level>
+			<WashroomsType5>null</WashroomsType5>
+			<WashroomsType5Level>null</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>Lower</Level10>
+			<Level11></Level11>
+			<Level12>null</Level12>
+			<TimestampSql>2017-03-22 07:41:52.0</TimestampSql>
+			<AreaCode>09</AreaCode>
+			<MunicipalityCode>09.07</MunicipalityCode>
+			<CommunityCode>09.07.0050</CommunityCode>
+			<MunicipalityDistrict>Newmarket</MunicipalityDistrict>
+			<Area>York</Area>
+			<Municipality>Newmarket</Municipality>
+			<Community>Central Newmarket</Community>
+			<IdxUpdtedDt>2012-07-04 06:09:39.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-15 16:04:35.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>Central Air</AirConditioning>
+			<Acreage></Acreage>
+			<RemarksForClients>Fabulous Freehold Townhome In High Demand Enclave Of Homes! Gorgeous Kitchen Overlooks Living Room With Fireplace! Family-Sized Breakfast Area With Walk-Out To Large Deck! Spacious Master Bedroom With Ensuite! Superbly Finished Basement Provides Recreation Room, Office &amp; Walk-Out To Huge Rear Yard! Impeccably Maintained, Beautifully Decorated &amp; Attractively Landscaped Residence! An Exceptional Must See Home!</RemarksForClients>
+			<Address>165 Downey Circ</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>3</Washrooms>
+			<Bedrooms>3</Bedrooms>
+			<BedroomsPlus>null</BedroomsPlus>
+			<Basement1>Fin W/O</Basement1>
+			<Basement2>null</Basement2>
+			<CableTVIncluded>null</CableTVIncluded>
+			<CacIncluded>null</CacIncluded>
+			<CommonElementsIncluded>null</CommonElementsIncluded>
+			<FrontingOnNSEW>N</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Bayview/St.John&apos;s</DirectionsCrossStreets>
+			<FamilyRoom>N</FamilyRoom>
+			<LotDepth>118.73</LotDepth>
+			<Drive>Private</Drive>
+			<UtilitiesHydro>null</UtilitiesHydro>
+			<Elevator>null</Elevator>
+			<Extras>Hardwood Floors &amp; Oak Staircase, Fridge, Stove, Built-In Dishwasher &amp; Microwave, Central Air, All Blinds &amp; Light Fixtures/Ceiling Fans, Garage Door Opener, Access To Interior &amp; Backyard From Garage, Furnace 2017</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>Y</FireplaceStove>
+			<LotFront>22.55</LotFront>
+			<HeatSource>Gas</HeatSource>
+			<GarageType>Built-In</GarageType>
+			<UtilitiesGas>null</UtilitiesGas>
+			<HeatIncluded>null</HeatIncluded>
+			<HeatType>Forced Air</HeatType>
+			<HydroIncluded>null</HydroIncluded>
+			<LotIrregularities>null</LotIrregularities>
+			<LegalDescription>Pt Blk 107, 65M3049, Pts 2, 3, 4 &amp; 5, 65R19467; S/</LegalDescription>
+			<Level1>Main</Level1>
+			<Level2>Main</Level2>
+			<Level3>Main</Level3>
+			<Level4>Main</Level4>
+			<Level5>2nd</Level5>
+			<Level6>2nd</Level6>
+			<Level7>2nd</Level7>
+			<Level8>Bsmt</Level8>
+			<Level9>Bsmt</Level9>
+			<LotSizeCode>Feet</LotSizeCode>
+			<ListPrice>699900.00</ListPrice>
+			<MLS>N3731828</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId>null</ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>2</ParkingSpaces>
+			<Pool>None</Pool>
+			<ParkingIncluded>null</ParkingIncluded>
+			<ListBrokerage>WOODSVIEW REALTY INC., BROKERAGE</ListBrokerage>
+			<Room1Length>3.30</Room1Length>
+			<Room1>Living</Room1>
+			<Room1Width>3.06</Room1Width>
+			<Room2Length>3.22</Room2Length>
+			<Room2>Dining</Room2>
+			<Room2Width>2.45</Room2Width>
+			<Room3Length>3.33</Room3Length>
+			<Room3>Kitchen</Room3>
+			<Room3Width>2.45</Room3Width>
+			<Room4Length>2.53</Room4Length>
+			<Room4>Breakfast</Room4>
+			<Room4Width>2.45</Room4Width>
+			<Room5Length>4.79</Room5Length>
+			<Room5>Master</Room5>
+			<Room5Width>4.71</Room5Width>
+			<Room6Length>3.27</Room6Length>
+			<Room6>2nd Br</Room6>
+			<Room6Width>2.80</Room6Width>
+			<Room7Length>2.81</Room7Length>
+			<Room7>3rd Br</Room7>
+			<Room7Width>2.78</Room7Width>
+			<Room8Length>5.75</Room8Length>
+			<Room8>Rec</Room8>
+			<Room8Width>5.34</Room8Width>
+			<Room9Length>2.72</Room9Length>
+			<Room9>Office</Room9>
+			<Room9Width>2.40</Room9Width>
+			<Rooms>7</Rooms>
+			<RoomsPlus>2</RoomsPlus>
+			<SaleLease>Sale</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>null</ApproxSquareFootage>
+			<StreetName>Downey</StreetName>
+			<StreetDirection>null</StreetDirection>
+			<Street>165</Street>
+			<StreetAbbreviation>Circ</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>2-Storey</Style>
+			<Taxes>3414.40</Taxes>
+			<VirtualTourURL>http://www3.winsold.com/?s=5&amp;v=165downeycircle</VirtualTourURL>
+			<Assessment>null</Assessment>
+			<Uffi>null</Uffi>
+			<UtilitiesCable>null</UtilitiesCable>
+			<UtilitiesTelephone>null</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>Y</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>null</WaterIncluded>
+			<WashroomsType1Pcs>2</WashroomsType1Pcs>
+			<WashroomsType2Pcs>3</WashroomsType2Pcs>
+			<WashroomsType3Pcs>4</WashroomsType3Pcs>
+			<WashroomsType4Pcs>null</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>1</WashroomsType3>
+			<WashroomsType4>null</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>2016</TaxYear>
+			<ApproxAge></ApproxAge>
+			<PostalCode>L4G7E9</PostalCode>
+			<Zoning>Residential</Zoning>
+			<TypeOwnSrch>A.</TypeOwnSrch>
+			<TypeOwn1Out>Att/Row/Twnhouse</TypeOwn1Out>
+			<Exterior1>Brick</Exterior1>
+			<Exterior2>null</Exterior2>
+			<PropertyFeatures1>Clear View</PropertyFeatures1>
+			<PropertyFeatures2>Golf</PropertyFeatures2>
+			<OtherStructures1>null</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Gas Fireplace</Room1Desc1>
+			<Room1Desc2>Ceiling Fan</Room1Desc2>
+			<Room1Desc3>Hardwood Floor</Room1Desc3>
+			<Room2Desc1>Open Concept</Room2Desc1>
+			<Room2Desc2>O/Looks Living</Room2Desc2>
+			<Room2Desc3>Hardwood Floor</Room2Desc3>
+			<Room3Desc1>Family Size Kitchen</Room3Desc1>
+			<Room3Desc2>O/Looks Dining</Room3Desc2>
+			<Room3Desc3>Ceramic Floor</Room3Desc3>
+			<Room4Desc1>W/O To Deck</Room4Desc1>
+			<Room4Desc2>O/Looks Backyard</Room4Desc2>
+			<Room4Desc3>Ceramic Floor</Room4Desc3>
+			<Room5Desc1>3 Pc Ensuite</Room5Desc1>
+			<Room5Desc2>Ceiling Fan</Room5Desc2>
+			<Room5Desc3></Room5Desc3>
+			<Room6Desc1>Ceiling Fan</Room6Desc1>
+			<Room6Desc2>Closet</Room6Desc2>
+			<Room6Desc3></Room6Desc3>
+			<Room7Desc1>Closet</Room7Desc1>
+			<Room7Desc2>Window</Room7Desc2>
+			<Room7Desc3>Broadloom</Room7Desc3>
+			<Room8Desc1>W/O To Patio</Room8Desc1>
+			<Room8Desc2>Pot Lights</Room8Desc2>
+			<Room8Desc3>Broadloom</Room8Desc3>
+			<Room9Desc1>Separate Rm</Room9Desc1>
+			<Room9Desc2>Partly Finished</Room9Desc2>
+			<Room9Desc3>Broadloom</Room9Desc3>
+			<AssessmentYear>null</AssessmentYear>
+			<GarageSpaces>1.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>null</Map>
+			<MapColumn>null</MapColumn>
+			<MapRow></MapRow>
+			<AllInclusive>null</AllInclusive>
+			<Furnished>null</Furnished>
+			<LaundryAccess>null</LaundryAccess>
+			<PrivateEntrance>null</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac>null</CentralVac>
+			<KitchensPlus>null</KitchensPlus>
+			<LaundryLevel>null</LaundryLevel>
+			<PropertyFeatures3>Grnbelt/Conserv</PropertyFeatures3>
+			<PropertyFeatures4>Park</PropertyFeatures4>
+			<PropertyFeatures5>Public Transit</PropertyFeatures5>
+			<PropertyFeatures6>null</PropertyFeatures6>
+			<Retirement>null</Retirement>
+			<Room10Desc1>null</Room10Desc1>
+			<Room10Desc2>null</Room10Desc2>
+			<Room10Desc3>null</Room10Desc3>
+			<Room10Length>null</Room10Length>
+			<Room10>null</Room10>
+			<Room10Width>null</Room10Width>
+			<Room11Desc1>null</Room11Desc1>
+			<Room11Desc2>null</Room11Desc2>
+			<Room11Desc3>null</Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11>null</Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>null</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>null</Waterfront>
+			<WashroomsType5Pcs>null</WashroomsType5Pcs>
+			<WashroomsType1Level>Main</WashroomsType1Level>
+			<WashroomsType2Level>2nd</WashroomsType2Level>
+			<WashroomsType3Level>2nd</WashroomsType3Level>
+			<WashroomsType4Level>null</WashroomsType4Level>
+			<WashroomsType5>null</WashroomsType5>
+			<WashroomsType5Level>null</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>null</Level10>
+			<Level11>null</Level11>
+			<Level12>null</Level12>
+			<TimestampSql>2017-03-23 06:21:00.0</TimestampSql>
+			<AreaCode>09</AreaCode>
+			<MunicipalityCode>09.06</MunicipalityCode>
+			<CommunityCode>09.06.0050</CommunityCode>
+			<MunicipalityDistrict>Aurora</MunicipalityDistrict>
+			<Area>York</Area>
+			<Municipality>Aurora</Municipality>
+			<Community>Bayview Wellington</Community>
+			<IdxUpdtedDt>2012-07-04 06:09:39.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-17 08:57:25.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>Central Air</AirConditioning>
+			<Acreage>null</Acreage>
+			<RemarksForClients>Immaculate Bright And Spacious 4 Bedroom Family Home Backing Onto A Beautiful Park On Mature Tree Lined Street In The Heart Of Richmond Hill.  Open Concept Living - Dining Room Overlooking Private Backyard.  Modern Kitchen, Sunken Family Room And Hardwood Throughout; Upgraded Bathrooms, Finished Lower Level With Loads Of Built-In Storage Closets, Pot-Lights, 3Pc Bath And Possible Office/Bedroom.  Just Steps From Hillcrest Mall, Transit, Schools &amp; Parks.</RemarksForClients>
+			<Address>66 Springhead Gdns</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>3</Washrooms>
+			<Bedrooms>4</Bedrooms>
+			<BedroomsPlus>null</BedroomsPlus>
+			<Basement1>Finished</Basement1>
+			<Basement2>null</Basement2>
+			<CableTVIncluded>null</CableTVIncluded>
+			<CacIncluded>null</CacIncluded>
+			<CommonElementsIncluded>null</CommonElementsIncluded>
+			<FrontingOnNSEW>N</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Yonge &amp; Carville</DirectionsCrossStreets>
+			<FamilyRoom>Y</FamilyRoom>
+			<LotDepth>120.00</LotDepth>
+			<Drive>Private</Drive>
+			<UtilitiesHydro>null</UtilitiesHydro>
+			<Elevator>null</Elevator>
+			<Extras>Fridge, Stove, Built In Dishwasher, Exhaust Hood, Front Load Washer/Dryer, Central Air Conditioner, All Electric Light Fixtures, California Shutters, Garden Shed, Hot Tub And Cover, Security System.</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>Y</FireplaceStove>
+			<LotFront>35.00</LotFront>
+			<HeatSource>Gas</HeatSource>
+			<GarageType>Attached</GarageType>
+			<UtilitiesGas>null</UtilitiesGas>
+			<HeatIncluded>null</HeatIncluded>
+			<HeatType>Forced Air</HeatType>
+			<HydroIncluded>null</HydroIncluded>
+			<LotIrregularities>null</LotIrregularities>
+			<LegalDescription>Pcl 119-3 Sec M1436;Ptlt 119, Plm1436, Part 7 66R6</LegalDescription>
+			<Level1>Main</Level1>
+			<Level2>Main</Level2>
+			<Level3>Main</Level3>
+			<Level4>Main</Level4>
+			<Level5>2nd</Level5>
+			<Level6>2nd</Level6>
+			<Level7>2nd</Level7>
+			<Level8>2nd</Level8>
+			<Level9>Lower</Level9>
+			<LotSizeCode>Feet</LotSizeCode>
+			<ListPrice>899000.00</ListPrice>
+			<MLS>N3735305</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId>null</ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>2</ParkingSpaces>
+			<Pool>None</Pool>
+			<ParkingIncluded>null</ParkingIncluded>
+			<ListBrokerage>HARVEY KALLES REAL ESTATE LTD., BROKERAGE</ListBrokerage>
+			<Room1Length>5.11</Room1Length>
+			<Room1>Living</Room1>
+			<Room1Width>3.63</Room1Width>
+			<Room2Length>3.00</Room2Length>
+			<Room2>Dining</Room2>
+			<Room2Width>2.87</Room2Width>
+			<Room3Length>4.37</Room3Length>
+			<Room3>Kitchen</Room3>
+			<Room3Width>2.87</Room3Width>
+			<Room4Length>3.71</Room4Length>
+			<Room4>Family</Room4>
+			<Room4Width>3.05</Room4Width>
+			<Room5Length>4.75</Room5Length>
+			<Room5>Master</Room5>
+			<Room5Width>3.99</Room5Width>
+			<Room6Length>3.30</Room6Length>
+			<Room6>2nd Br</Room6>
+			<Room6Width>2.80</Room6Width>
+			<Room7Length>4.62</Room7Length>
+			<Room7>3rd Br</Room7>
+			<Room7Width>3.33</Room7Width>
+			<Room8Length>3.25</Room8Length>
+			<Room8>4th Br</Room8>
+			<Room8Width>3.00</Room8Width>
+			<Room9Length>6.04</Room9Length>
+			<Room9>Rec</Room9>
+			<Room9Width>5.08</Room9Width>
+			<Rooms>8</Rooms>
+			<RoomsPlus>2</RoomsPlus>
+			<SaleLease>Sale</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>null</ApproxSquareFootage>
+			<StreetName>Springhead</StreetName>
+			<StreetDirection>null</StreetDirection>
+			<Street>66</Street>
+			<StreetAbbreviation>Gdns</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>2-Storey</Style>
+			<Taxes>3965.29</Taxes>
+			<VirtualTourURL>http://www.houssmax.ca/vtournb/h9280683</VirtualTourURL>
+			<Assessment>null</Assessment>
+			<Uffi>null</Uffi>
+			<UtilitiesCable>null</UtilitiesCable>
+			<UtilitiesTelephone>null</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>N</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>null</WaterIncluded>
+			<WashroomsType1Pcs>2</WashroomsType1Pcs>
+			<WashroomsType2Pcs>4</WashroomsType2Pcs>
+			<WashroomsType3Pcs>3</WashroomsType3Pcs>
+			<WashroomsType4Pcs>null</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>1</WashroomsType3>
+			<WashroomsType4>null</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>2016</TaxYear>
+			<ApproxAge>null</ApproxAge>
+			<PostalCode>L4C5B9</PostalCode>
+			<Zoning>null</Zoning>
+			<TypeOwnSrch>L.</TypeOwnSrch>
+			<TypeOwn1Out>Link</TypeOwn1Out>
+			<Exterior1>Alum Siding</Exterior1>
+			<Exterior2>Brick</Exterior2>
+			<PropertyFeatures1>null</PropertyFeatures1>
+			<PropertyFeatures2>null</PropertyFeatures2>
+			<OtherStructures1>null</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Fireplace</Room1Desc1>
+			<Room1Desc2>Hardwood Floor</Room1Desc2>
+			<Room1Desc3>W/O To Deck</Room1Desc3>
+			<Room2Desc1>Hardwood Floor</Room2Desc1>
+			<Room2Desc2>Picture Window</Room2Desc2>
+			<Room2Desc3>null</Room2Desc3>
+			<Room3Desc1>Renovated</Room3Desc1>
+			<Room3Desc2>W/O To Patio</Room3Desc2>
+			<Room3Desc3>Pantry</Room3Desc3>
+			<Room4Desc1>Sunken Room</Room4Desc1>
+			<Room4Desc2>Hardwood Floor</Room4Desc2>
+			<Room4Desc3>null</Room4Desc3>
+			<Room5Desc1>W/I Closet</Room5Desc1>
+			<Room5Desc2>Broadloom</Room5Desc2>
+			<Room5Desc3>Crown Moulding</Room5Desc3>
+			<Room6Desc1>Hardwood Floor</Room6Desc1>
+			<Room6Desc2>Closet</Room6Desc2>
+			<Room6Desc3>Crown Moulding</Room6Desc3>
+			<Room7Desc1>Closet</Room7Desc1>
+			<Room7Desc2>Broadloom</Room7Desc2>
+			<Room7Desc3>Crown Moulding</Room7Desc3>
+			<Room8Desc1>Closet</Room8Desc1>
+			<Room8Desc2>Broadloom</Room8Desc2>
+			<Room8Desc3>Crown Moulding</Room8Desc3>
+			<Room9Desc1>Broadloom</Room9Desc1>
+			<Room9Desc2>Window</Room9Desc2>
+			<Room9Desc3>null</Room9Desc3>
+			<AssessmentYear>null</AssessmentYear>
+			<GarageSpaces>1.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>349</Map>
+			<MapColumn>21</MapColumn>
+			<MapRow>T</MapRow>
+			<AllInclusive>null</AllInclusive>
+			<Furnished>null</Furnished>
+			<LaundryAccess>null</LaundryAccess>
+			<PrivateEntrance>null</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac>null</CentralVac>
+			<KitchensPlus>null</KitchensPlus>
+			<LaundryLevel>null</LaundryLevel>
+			<PropertyFeatures3>null</PropertyFeatures3>
+			<PropertyFeatures4>null</PropertyFeatures4>
+			<PropertyFeatures5>null</PropertyFeatures5>
+			<PropertyFeatures6>null</PropertyFeatures6>
+			<Retirement>null</Retirement>
+			<Room10Desc1>Window</Room10Desc1>
+			<Room10Desc2>Partly Finished</Room10Desc2>
+			<Room10Desc3>null</Room10Desc3>
+			<Room10Length>null</Room10Length>
+			<Room10>Other</Room10>
+			<Room10Width>null</Room10Width>
+			<Room11Desc1>null</Room11Desc1>
+			<Room11Desc2>null</Room11Desc2>
+			<Room11Desc3>null</Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11>null</Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>null</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>null</Waterfront>
+			<WashroomsType5Pcs>null</WashroomsType5Pcs>
+			<WashroomsType1Level>Main</WashroomsType1Level>
+			<WashroomsType2Level>2nd</WashroomsType2Level>
+			<WashroomsType3Level>Bsmt</WashroomsType3Level>
+			<WashroomsType4Level>null</WashroomsType4Level>
+			<WashroomsType5>null</WashroomsType5>
+			<WashroomsType5Level>null</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>Lower</Level10>
+			<Level11>null</Level11>
+			<Level12>null</Level12>
+			<TimestampSql>2017-03-21 13:03:54.0</TimestampSql>
+			<AreaCode>09</AreaCode>
+			<MunicipalityCode>09.04</MunicipalityCode>
+			<CommunityCode>09.04.0050</CommunityCode>
+			<MunicipalityDistrict>Richmond Hill</MunicipalityDistrict>
+			<Area>York</Area>
+			<Municipality>Richmond Hill</Municipality>
+			<Community>North Richvale</Community>
+			<IdxUpdtedDt>2012-07-10 08:31:14.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-21 13:00:36.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>Central Air</AirConditioning>
+			<Acreage>null</Acreage>
+			<RemarksForClients>Fabulous Fully Renovated Freehold 3 Storey Townhouse With Drive And Tandem 2 Car Garage. Fully Renovated And Ready To Move In. Main Floor Living Room With Gas Fireplace And Walkout To Private Deck And Garden. Renovated Kitchen With Stainless Steel Appliances. Great Neighbourhood, Just Steps To Transit.</RemarksForClients>
+			<Address>217 Seaton St</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>2</Washrooms>
+			<Bedrooms>2</Bedrooms>
+			<BedroomsPlus>null</BedroomsPlus>
+			<Basement1>None</Basement1>
+			<Basement2>null</Basement2>
+			<CableTVIncluded>N</CableTVIncluded>
+			<CacIncluded>N</CacIncluded>
+			<CommonElementsIncluded>N</CommonElementsIncluded>
+			<FrontingOnNSEW>E</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Sherbourne/Gerrard</DirectionsCrossStreets>
+			<FamilyRoom>N</FamilyRoom>
+			<LotDepth>null</LotDepth>
+			<Drive>Private</Drive>
+			<UtilitiesHydro>null</UtilitiesHydro>
+			<Elevator>null</Elevator>
+			<Extras>Stainless Steel Fridge, Stainless Steel Range, Stainless Steel B/I Microwave, Stainless Steel B/I Dishwasher, Front Load Washer/Dryer. Gas Fireplace, Electric Garage Door Opener.</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>Y</FireplaceStove>
+			<LotFront>null</LotFront>
+			<HeatSource>Electric</HeatSource>
+			<GarageType>Built-In</GarageType>
+			<UtilitiesGas>null</UtilitiesGas>
+			<HeatIncluded>N</HeatIncluded>
+			<HeatType>Baseboard</HeatType>
+			<HydroIncluded>N</HydroIncluded>
+			<LotIrregularities>null</LotIrregularities>
+			<LegalDescription>null</LegalDescription>
+			<Level1>Ground</Level1>
+			<Level2>Ground</Level2>
+			<Level3>2nd</Level3>
+			<Level4>2nd</Level4>
+			<Level5>3rd</Level5>
+			<Level6>3rd</Level6>
+			<Level7>null</Level7>
+			<Level8>null</Level8>
+			<Level9>null</Level9>
+			<LotSizeCode>null</LotSizeCode>
+			<ListPrice>4000.00</ListPrice>
+			<MLS>C3732226</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId>null</ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>1</ParkingSpaces>
+			<Pool>None</Pool>
+			<ParkingIncluded>Y</ParkingIncluded>
+			<ListBrokerage>HARVEY KALLES REAL ESTATE LTD., BROKERAGE</ListBrokerage>
+			<Room1Length>2.41</Room1Length>
+			<Room1>Foyer</Room1>
+			<Room1Width>2.70</Room1Width>
+			<Room2Length>6.07</Room2Length>
+			<Room2>Living</Room2>
+			<Room2Width>3.93</Room2Width>
+			<Room3Length>4.03</Room3Length>
+			<Room3>Dining</Room3>
+			<Room3Width>4.27</Room3Width>
+			<Room4Length>4.03</Room4Length>
+			<Room4>Kitchen</Room4>
+			<Room4Width>3.08</Room4Width>
+			<Room5Length>4.03</Room5Length>
+			<Room5>Master</Room5>
+			<Room5Width>4.27</Room5Width>
+			<Room6Length>4.03</Room6Length>
+			<Room6>2nd Br</Room6>
+			<Room6Width>3.69</Room6Width>
+			<Room7Length>null</Room7Length>
+			<Room7>null</Room7>
+			<Room7Width>null</Room7Width>
+			<Room8Length>null</Room8Length>
+			<Room8>null</Room8>
+			<Room8Width>null</Room8Width>
+			<Room9Length>null</Room9Length>
+			<Room9>null</Room9>
+			<Room9Width>null</Room9Width>
+			<Rooms>5</Rooms>
+			<RoomsPlus>null</RoomsPlus>
+			<SaleLease>Lease</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>1500-2000</ApproxSquareFootage>
+			<StreetName>Seaton</StreetName>
+			<StreetDirection>null</StreetDirection>
+			<Street>217</Street>
+			<StreetAbbreviation>St</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>3-Storey</Style>
+			<Taxes>null</Taxes>
+			<VirtualTourURL>null</VirtualTourURL>
+			<Assessment>null</Assessment>
+			<Uffi>null</Uffi>
+			<UtilitiesCable>null</UtilitiesCable>
+			<UtilitiesTelephone>null</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>N</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>N</WaterIncluded>
+			<WashroomsType1Pcs>4</WashroomsType1Pcs>
+			<WashroomsType2Pcs>2</WashroomsType2Pcs>
+			<WashroomsType3Pcs>null</WashroomsType3Pcs>
+			<WashroomsType4Pcs>null</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>null</WashroomsType3>
+			<WashroomsType4>null</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>null</TaxYear>
+			<ApproxAge>null</ApproxAge>
+			<PostalCode>M5A2T5</PostalCode>
+			<Zoning>null</Zoning>
+			<TypeOwnSrch>A.</TypeOwnSrch>
+			<TypeOwn1Out>Att/Row/Twnhouse</TypeOwn1Out>
+			<Exterior1>Brick</Exterior1>
+			<Exterior2>null</Exterior2>
+			<PropertyFeatures1>null</PropertyFeatures1>
+			<PropertyFeatures2>null</PropertyFeatures2>
+			<OtherStructures1>null</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Ceramic Floor</Room1Desc1>
+			<Room1Desc2>2 Pc Bath</Room1Desc2>
+			<Room1Desc3></Room1Desc3>
+			<Room2Desc1>Laminate</Room2Desc1>
+			<Room2Desc2>Gas Fireplace</Room2Desc2>
+			<Room2Desc3>W/O To Deck</Room2Desc3>
+			<Room3Desc1>Bay Window</Room3Desc1>
+			<Room3Desc2>Laminate</Room3Desc2>
+			<Room3Desc3>null</Room3Desc3>
+			<Room4Desc1>Renovated</Room4Desc1>
+			<Room4Desc2>Stainless Steel Appl</Room4Desc2>
+			<Room4Desc3>Granite Counter</Room4Desc3>
+			<Room5Desc1>Double Closet</Room5Desc1>
+			<Room5Desc2>Laminate</Room5Desc2>
+			<Room5Desc3>Picture Window</Room5Desc3>
+			<Room6Desc1>Closet</Room6Desc1>
+			<Room6Desc2>Laminate</Room6Desc2>
+			<Room6Desc3>null</Room6Desc3>
+			<Room7Desc1>null</Room7Desc1>
+			<Room7Desc2>null</Room7Desc2>
+			<Room7Desc3>null</Room7Desc3>
+			<Room8Desc1>null</Room8Desc1>
+			<Room8Desc2>null</Room8Desc2>
+			<Room8Desc3>null</Room8Desc3>
+			<Room9Desc1>null</Room9Desc1>
+			<Room9Desc2>null</Room9Desc2>
+			<Room9Desc3>null</Room9Desc3>
+			<AssessmentYear>null</AssessmentYear>
+			<GarageSpaces>2.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>120</Map>
+			<MapColumn>20</MapColumn>
+			<MapRow>R</MapRow>
+			<AllInclusive>N</AllInclusive>
+			<Furnished>N</Furnished>
+			<LaundryAccess>Ensuite</LaundryAccess>
+			<PrivateEntrance>Y</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac>null</CentralVac>
+			<KitchensPlus>null</KitchensPlus>
+			<LaundryLevel>null</LaundryLevel>
+			<PropertyFeatures3>null</PropertyFeatures3>
+			<PropertyFeatures4>null</PropertyFeatures4>
+			<PropertyFeatures5>null</PropertyFeatures5>
+			<PropertyFeatures6>null</PropertyFeatures6>
+			<Retirement>null</Retirement>
+			<Room10Desc1>null</Room10Desc1>
+			<Room10Desc2>null</Room10Desc2>
+			<Room10Desc3>null</Room10Desc3>
+			<Room10Length>null</Room10Length>
+			<Room10>null</Room10>
+			<Room10Width>null</Room10Width>
+			<Room11Desc1>null</Room11Desc1>
+			<Room11Desc2>null</Room11Desc2>
+			<Room11Desc3>null</Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11>null</Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>null</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>null</Waterfront>
+			<WashroomsType5Pcs>null</WashroomsType5Pcs>
+			<WashroomsType1Level>3rd</WashroomsType1Level>
+			<WashroomsType2Level>Main</WashroomsType2Level>
+			<WashroomsType3Level>null</WashroomsType3Level>
+			<WashroomsType4Level>null</WashroomsType4Level>
+			<WashroomsType5>null</WashroomsType5>
+			<WashroomsType5Level>null</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>null</Level10>
+			<Level11>null</Level11>
+			<Level12>null</Level12>
+			<TimestampSql>2017-03-17 12:56:24.0</TimestampSql>
+			<AreaCode>01</AreaCode>
+			<MunicipalityCode>01.C08</MunicipalityCode>
+			<CommunityCode>01.C08.0950</CommunityCode>
+			<MunicipalityDistrict>Toronto C08</MunicipalityDistrict>
+			<Area>Toronto</Area>
+			<Municipality>Toronto</Municipality>
+			<Community>Moss Park</Community>
+			<IdxUpdtedDt>2012-07-10 08:31:14.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-17 12:56:32.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>Central Air</AirConditioning>
+			<Acreage>null</Acreage>
+			<RemarksForClients>Fantastic Family Home! Open Concept 1st Floor W/9Ft Ceilings, Handscraped Hardwood, Upgraded Baseboard, Crown Moulding &amp; Office W/Built-In Bookcase, Kitchen Is Entertainers Delight; Lrg Centre Island, Ss Appliances, Stone Backsplash &amp; Spacious Pantry. Upgraded Light Fixtures, Calif Shutters, Granite Counters &amp; Designer Paint Colours. 2nd Floor Incl 4Bdrms, Spacious Family Room &amp; Convenient Laundry. Desirable Wilmott Location; Close To School, Park &amp; Shops.</RemarksForClients>
+			<Address>216 Leiterman Dr N</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>3</Washrooms>
+			<Bedrooms>4</Bedrooms>
+			<BedroomsPlus>null</BedroomsPlus>
+			<Basement1>Unfinished</Basement1>
+			<Basement2>null</Basement2>
+			<CableTVIncluded>null</CableTVIncluded>
+			<CacIncluded>null</CacIncluded>
+			<CommonElementsIncluded>null</CommonElementsIncluded>
+			<FrontingOnNSEW>N</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Leiterman/Louis Saint Laurent</DirectionsCrossStreets>
+			<FamilyRoom>Y</FamilyRoom>
+			<LotDepth>88.58</LotDepth>
+			<Drive>Private</Drive>
+			<UtilitiesHydro>null</UtilitiesHydro>
+			<Elevator>null</Elevator>
+			<Extras>Fridge,Stove,B/I Dishwasher,Washer,Dryer,All Elf, California Shutter Window Coverings, Garage Door Opener (Hot Water Tank Rental)</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>N</FireplaceStove>
+			<LotFront>36.09</LotFront>
+			<HeatSource>Gas</HeatSource>
+			<GarageType>Built-In</GarageType>
+			<UtilitiesGas>null</UtilitiesGas>
+			<HeatIncluded>null</HeatIncluded>
+			<HeatType>Forced Air</HeatType>
+			<HydroIncluded>null</HydroIncluded>
+			<LotIrregularities>null</LotIrregularities>
+			<LegalDescription>Lot#361Plan  20M1082</LegalDescription>
+			<Level1>Main</Level1>
+			<Level2>Main</Level2>
+			<Level3>Main</Level3>
+			<Level4>Main</Level4>
+			<Level5>2nd</Level5>
+			<Level6>2nd</Level6>
+			<Level7>2nd</Level7>
+			<Level8>2nd</Level8>
+			<Level9>2nd</Level9>
+			<LotSizeCode>Feet</LotSizeCode>
+			<ListPrice>887000.00</ListPrice>
+			<MLS>W3735620</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId>null</ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>2</ParkingSpaces>
+			<Pool>None</Pool>
+			<ParkingIncluded>null</ParkingIncluded>
+			<ListBrokerage>HOMELIFE/BAYVIEW REALTY INC., BROKERAGE</ListBrokerage>
+			<Room1Length>4.57</Room1Length>
+			<Room1>Living</Room1>
+			<Room1Width>3.96</Room1Width>
+			<Room2Length>3.96</Room2Length>
+			<Room2>Dining</Room2>
+			<Room2Width>3.35</Room2Width>
+			<Room3Length>3.65</Room3Length>
+			<Room3>Kitchen</Room3>
+			<Room3Width>3.65</Room3Width>
+			<Room4Length>2.74</Room4Length>
+			<Room4>Den</Room4>
+			<Room4Width>1.82</Room4Width>
+			<Room5Length>5.48</Room5Length>
+			<Room5>Master</Room5>
+			<Room5Width>3.65</Room5Width>
+			<Room6Length>5.18</Room6Length>
+			<Room6>Family</Room6>
+			<Room6Width>3.65</Room6Width>
+			<Room7Length>3.35</Room7Length>
+			<Room7>2nd Br</Room7>
+			<Room7Width>3.04</Room7Width>
+			<Room8Length>3.04</Room8Length>
+			<Room8>3rd Br</Room8>
+			<Room8Width>3.04</Room8Width>
+			<Room9Length>3.04</Room9Length>
+			<Room9>4th Br</Room9>
+			<Room9Width>3.04</Room9Width>
+			<Rooms>10</Rooms>
+			<RoomsPlus>null</RoomsPlus>
+			<SaleLease>Sale</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>2000-2500</ApproxSquareFootage>
+			<StreetName>Leiterman</StreetName>
+			<StreetDirection>N</StreetDirection>
+			<Street>216</Street>
+			<StreetAbbreviation>Dr</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>2-Storey</Style>
+			<Taxes>3600.00</Taxes>
+			<VirtualTourURL>http://tours.realtytours.ca/216-leiterman-drive-milton-n</VirtualTourURL>
+			<Assessment>null</Assessment>
+			<Uffi>null</Uffi>
+			<UtilitiesCable>null</UtilitiesCable>
+			<UtilitiesTelephone>null</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>N</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>null</WaterIncluded>
+			<WashroomsType1Pcs>2</WashroomsType1Pcs>
+			<WashroomsType2Pcs>4</WashroomsType2Pcs>
+			<WashroomsType3Pcs>4</WashroomsType3Pcs>
+			<WashroomsType4Pcs>null</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>1</WashroomsType3>
+			<WashroomsType4>null</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>2016</TaxYear>
+			<ApproxAge>0-5</ApproxAge>
+			<PostalCode>L9T8B3</PostalCode>
+			<Zoning>null</Zoning>
+			<TypeOwnSrch>D.</TypeOwnSrch>
+			<TypeOwn1Out>Detached</TypeOwn1Out>
+			<Exterior1>Brick</Exterior1>
+			<Exterior2>null</Exterior2>
+			<PropertyFeatures1>Fenced Yard</PropertyFeatures1>
+			<PropertyFeatures2>Public Transit</PropertyFeatures2>
+			<OtherStructures1>null</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Hardwood Floor</Room1Desc1>
+			<Room1Desc2>Open Concept</Room1Desc2>
+			<Room1Desc3>null</Room1Desc3>
+			<Room2Desc1>Hardwood Floor</Room2Desc1>
+			<Room2Desc2>Open Concept</Room2Desc2>
+			<Room2Desc3>Large Window</Room2Desc3>
+			<Room3Desc1>Ceramic Floor</Room3Desc1>
+			<Room3Desc2>Centre Island</Room3Desc2>
+			<Room3Desc3>Stainless Steel Appl</Room3Desc3>
+			<Room4Desc1>Hardwood Floor</Room4Desc1>
+			<Room4Desc2>B/I Bookcase</Room4Desc2>
+			<Room4Desc3>Updated</Room4Desc3>
+			<Room5Desc1>W/I Closet</Room5Desc1>
+			<Room5Desc2>Broadloom</Room5Desc2>
+			<Room5Desc3>4 Pc Ensuite</Room5Desc3>
+			<Room6Desc1>Large Window</Room6Desc1>
+			<Room6Desc2>Broadloom</Room6Desc2>
+			<Room6Desc3>Open Concept</Room6Desc3>
+			<Room7Desc1>B/I Closet</Room7Desc1>
+			<Room7Desc2>Broadloom</Room7Desc2>
+			<Room7Desc3>Large Window</Room7Desc3>
+			<Room8Desc1>B/I Closet</Room8Desc1>
+			<Room8Desc2>Broadloom</Room8Desc2>
+			<Room8Desc3>Large Window</Room8Desc3>
+			<Room9Desc1>B/I Closet</Room9Desc1>
+			<Room9Desc2>Broadloom</Room9Desc2>
+			<Room9Desc3>Large Window</Room9Desc3>
+			<AssessmentYear>null</AssessmentYear>
+			<GarageSpaces>2.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>456</Map>
+			<MapColumn>21</MapColumn>
+			<MapRow>D</MapRow>
+			<AllInclusive>null</AllInclusive>
+			<Furnished>null</Furnished>
+			<LaundryAccess>null</LaundryAccess>
+			<PrivateEntrance>null</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac>null</CentralVac>
+			<KitchensPlus>1</KitchensPlus>
+			<LaundryLevel>null</LaundryLevel>
+			<PropertyFeatures3>School</PropertyFeatures3>
+			<PropertyFeatures4>null</PropertyFeatures4>
+			<PropertyFeatures5>null</PropertyFeatures5>
+			<PropertyFeatures6>null</PropertyFeatures6>
+			<Retirement>N</Retirement>
+			<Room10Desc1>null</Room10Desc1>
+			<Room10Desc2>null</Room10Desc2>
+			<Room10Desc3>null</Room10Desc3>
+			<Room10Length>null</Room10Length>
+			<Room10>null</Room10>
+			<Room10Width>null</Room10Width>
+			<Room11Desc1>null</Room11Desc1>
+			<Room11Desc2>null</Room11Desc2>
+			<Room11Desc3>null</Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11>null</Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>null</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>null</Waterfront>
+			<WashroomsType5Pcs>null</WashroomsType5Pcs>
+			<WashroomsType1Level>Main</WashroomsType1Level>
+			<WashroomsType2Level>2nd</WashroomsType2Level>
+			<WashroomsType3Level>2nd</WashroomsType3Level>
+			<WashroomsType4Level>null</WashroomsType4Level>
+			<WashroomsType5>null</WashroomsType5>
+			<WashroomsType5Level>null</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>null</Level10>
+			<Level11>null</Level11>
+			<Level12>null</Level12>
+			<TimestampSql>2017-03-22 12:29:31.0</TimestampSql>
+			<AreaCode>06</AreaCode>
+			<MunicipalityCode>06.01</MunicipalityCode>
+			<CommunityCode>06.01.0140</CommunityCode>
+			<MunicipalityDistrict>Milton</MunicipalityDistrict>
+			<Area>Halton</Area>
+			<Municipality>Milton</Municipality>
+			<Community>Willmont</Community>
+			<IdxUpdtedDt>2012-04-06 06:22:08.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-21 16:56:58.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+	<ResidentialProperty>
+		<Listing>
+			<AirConditioning>Central Air</AirConditioning>
+			<Acreage>&lt; .49</Acreage>
+			<RemarksForClients>Prestigious Beautiful 4400 Sf Stonehaven Hm End Of Crt Loc. W Fin Bsmt, Prem Pie Lot W S/E Exp Bkyrd W I/G Pool, Lg E/I Kit W Grnite Counters, New Flring In Dr, Off, Fr. New Crpts In Lr, All Of Upstairs&amp; Bsmt Lning. Mstr W/Large W/I Closet &amp; 6 Pc Ensuite, 3rd Bedroom W 4Pc Ensuite, Recent Renos Include: Painting, Flooring, Kit Work. Windows W Vinyl Siding Replaced Over Last 4 Years!</RemarksForClients>
+			<Address>996 Portminster Crt</Address>
+			<AptUnit>null</AptUnit>
+			<Washrooms>5</Washrooms>
+			<Bedrooms>5</Bedrooms>
+			<BedroomsPlus>null</BedroomsPlus>
+			<Basement1>Finished</Basement1>
+			<Basement2>Full</Basement2>
+			<CableTVIncluded>null</CableTVIncluded>
+			<CacIncluded>null</CacIncluded>
+			<CommonElementsIncluded>null</CommonElementsIncluded>
+			<FrontingOnNSEW>S</FrontingOnNSEW>
+			<Province>Ontario</Province>
+			<DirectionsCrossStreets>Stonehaven And Leslie</DirectionsCrossStreets>
+			<FamilyRoom>Y</FamilyRoom>
+			<LotDepth>131.00</LotDepth>
+			<Drive>Pvt Double</Drive>
+			<UtilitiesHydro>Y</UtilitiesHydro>
+			<Elevator>N</Elevator>
+			<Extras>Fridge, Stove, Washer, Dryer, Freezer, B/I Dw, Pool &amp; Equip, Hot Tub (Pump &amp; Spa Pack 2016), Widw Cvrngs, Elfs, Surfside Ig Pool 2008, 16&apos; X 32&apos; Irr, New Pump 2013, Facing Ken Sturgeon Pk, Instahot, Ac 2009, Skylght 2015, Gdo,  Shngld 2009</Extras>
+			<FarmAgriculture>null</FarmAgriculture>
+			<FireplaceStove>Y</FireplaceStove>
+			<LotFront>50.72</LotFront>
+			<HeatSource>Gas</HeatSource>
+			<GarageType>Attached</GarageType>
+			<UtilitiesGas>Y</UtilitiesGas>
+			<HeatIncluded>null</HeatIncluded>
+			<HeatType>Forced Air</HeatType>
+			<HydroIncluded>null</HydroIncluded>
+			<LotIrregularities>null</LotIrregularities>
+			<LegalDescription>Lot 130 Plan 65M2710</LegalDescription>
+			<Level1>Main</Level1>
+			<Level2>Main</Level2>
+			<Level3>Main</Level3>
+			<Level4>Main</Level4>
+			<Level5>Main</Level5>
+			<Level6>2nd</Level6>
+			<Level7>2nd</Level7>
+			<Level8>2nd</Level8>
+			<Level9>2nd</Level9>
+			<LotSizeCode>Feet</LotSizeCode>
+			<ListPrice>1688888.00</ListPrice>
+			<MLS>N3731779</MLS>
+			<Kitchens>1</Kitchens>
+			<OutofAreaMunicipality></OutofAreaMunicipality>
+			<ParcelId>null</ParcelId>
+			<ParkCostMo>null</ParkCostMo>
+			<ParkingSpaces>6</ParkingSpaces>
+			<Pool>Inground</Pool>
+			<ParkingIncluded>null</ParkingIncluded>
+			<ListBrokerage>KELLER WILLIAMS REALTY CENTRES, BROKERAGE</ListBrokerage>
+			<Room1Length>4.48</Room1Length>
+			<Room1>Living</Room1>
+			<Room1Width>4.10</Room1Width>
+			<Room2Length>4.69</Room2Length>
+			<Room2>Dining</Room2>
+			<Room2Width>3.92</Room2Width>
+			<Room3Length>6.01</Room3Length>
+			<Room3>Kitchen</Room3>
+			<Room3Width>5.85</Room3Width>
+			<Room4Length>5.85</Room4Length>
+			<Room4>Office</Room4>
+			<Room4Width>3.63</Room4Width>
+			<Room5Length>5.90</Room5Length>
+			<Room5>Family</Room5>
+			<Room5Width>4.68</Room5Width>
+			<Room6Length>9.15</Room6Length>
+			<Room6>Master</Room6>
+			<Room6Width>7.45</Room6Width>
+			<Room7Length>4.90</Room7Length>
+			<Room7>2nd Br</Room7>
+			<Room7Width>3.80</Room7Width>
+			<Room8Length>5.59</Room8Length>
+			<Room8>3rd Br</Room8>
+			<Room8Width>4.90</Room8Width>
+			<Room9Length>4.65</Room9Length>
+			<Room9>4th Br</Room9>
+			<Room9Width>4.65</Room9Width>
+			<Rooms>10</Rooms>
+			<RoomsPlus>2</RoomsPlus>
+			<SaleLease>Sale</SaleLease>
+			<Sewers>Sewers</Sewers>
+			<ApproxSquareFootage>3500-5000</ApproxSquareFootage>
+			<StreetName>Portminster</StreetName>
+			<StreetDirection>null</StreetDirection>
+			<Street>996</Street>
+			<StreetAbbreviation>Crt</StreetAbbreviation>
+			<Status>A</Status>
+			<Style>2-Storey</Style>
+			<Taxes>8400.00</Taxes>
+			<VirtualTourURL>https://youriguide.com/996_portminster_ct_newmarket_on?unbranded</VirtualTourURL>
+			<Assessment>null</Assessment>
+			<Uffi>No</Uffi>
+			<UtilitiesCable>Y</UtilitiesCable>
+			<UtilitiesTelephone>Y</UtilitiesTelephone>
+			<SellerPropertyInfoStatement>N</SellerPropertyInfoStatement>
+			<Water>Municipal</Water>
+			<WaterIncluded>null</WaterIncluded>
+			<WashroomsType1Pcs>6</WashroomsType1Pcs>
+			<WashroomsType2Pcs>5</WashroomsType2Pcs>
+			<WashroomsType3Pcs>4</WashroomsType3Pcs>
+			<WashroomsType4Pcs>3</WashroomsType4Pcs>
+			<WashroomsType1>1</WashroomsType1>
+			<WashroomsType2>1</WashroomsType2>
+			<WashroomsType3>1</WashroomsType3>
+			<WashroomsType4>1</WashroomsType4>
+			<WaterSupplyTypes>null</WaterSupplyTypes>
+			<TaxYear>2016</TaxYear>
+			<ApproxAge>null</ApproxAge>
+			<PostalCode>L3X1L9</PostalCode>
+			<Zoning>Single Family Residencial</Zoning>
+			<TypeOwnSrch>D.</TypeOwnSrch>
+			<TypeOwn1Out>Detached</TypeOwn1Out>
+			<Exterior1>Brick</Exterior1>
+			<Exterior2>null</Exterior2>
+			<PropertyFeatures1>null</PropertyFeatures1>
+			<PropertyFeatures2>null</PropertyFeatures2>
+			<OtherStructures1>Garden Shed</OtherStructures1>
+			<OtherStructures2>null</OtherStructures2>
+			<Room1Desc1>Picture Window</Room1Desc1>
+			<Room1Desc2>Broadloom</Room1Desc2>
+			<Room1Desc3>null</Room1Desc3>
+			<Room2Desc1>Formal Rm</Room2Desc1>
+			<Room2Desc2>French Doors</Room2Desc2>
+			<Room2Desc3>null</Room2Desc3>
+			<Room3Desc1>W/O To Deck</Room3Desc1>
+			<Room3Desc2>B/I Appliances</Room3Desc2>
+			<Room3Desc3>Granite Counter</Room3Desc3>
+			<Room4Desc1>null</Room4Desc1>
+			<Room4Desc2>null</Room4Desc2>
+			<Room4Desc3>null</Room4Desc3>
+			<Room5Desc1>Fireplace</Room5Desc1>
+			<Room5Desc2>null</Room5Desc2>
+			<Room5Desc3>null</Room5Desc3>
+			<Room6Desc1>6 Pc Ensuite</Room6Desc1>
+			<Room6Desc2>W/I Closet</Room6Desc2>
+			<Room6Desc3>null</Room6Desc3>
+			<Room7Desc1></Room7Desc1>
+			<Room7Desc2>null</Room7Desc2>
+			<Room7Desc3>null</Room7Desc3>
+			<Room8Desc1>4 Pc Ensuite</Room8Desc1>
+			<Room8Desc2>null</Room8Desc2>
+			<Room8Desc3>null</Room8Desc3>
+			<Room9Desc1>null</Room9Desc1>
+			<Room9Desc2>null</Room9Desc2>
+			<Room9Desc3>null</Room9Desc3>
+			<AssessmentYear>null</AssessmentYear>
+			<GarageSpaces>2.0</GarageSpaces>
+			<LeasedTerms>null</LeasedTerms>
+			<VirtualTourUploadDate>null</VirtualTourUploadDate>
+			<DisplayAddressOnInternet>Y</DisplayAddressOnInternet>
+			<Map>326</Map>
+			<MapColumn>28</MapColumn>
+			<MapRow>Y</MapRow>
+			<AllInclusive>null</AllInclusive>
+			<Furnished>null</Furnished>
+			<LaundryAccess>null</LaundryAccess>
+			<PrivateEntrance>null</PrivateEntrance>
+			<AddlMonthlyFees>null</AddlMonthlyFees>
+			<CentralVac></CentralVac>
+			<KitchensPlus>null</KitchensPlus>
+			<LaundryLevel>Main</LaundryLevel>
+			<PropertyFeatures3>null</PropertyFeatures3>
+			<PropertyFeatures4>null</PropertyFeatures4>
+			<PropertyFeatures5>null</PropertyFeatures5>
+			<PropertyFeatures6>null</PropertyFeatures6>
+			<Retirement>N</Retirement>
+			<Room10Desc1>null</Room10Desc1>
+			<Room10Desc2>null</Room10Desc2>
+			<Room10Desc3>null</Room10Desc3>
+			<Room10Length>4.29</Room10Length>
+			<Room10>5th Br</Room10>
+			<Room10Width>2.90</Room10Width>
+			<Room11Desc1>null</Room11Desc1>
+			<Room11Desc2>null</Room11Desc2>
+			<Room11Desc3>null</Room11Desc3>
+			<Room11Length>null</Room11Length>
+			<Room11>Rec</Room11>
+			<Room11Width>null</Room11Width>
+			<Room12Desc1>null</Room12Desc1>
+			<Room12Desc2>null</Room12Desc2>
+			<Room12Desc3>null</Room12Desc3>
+			<Room12Length>null</Room12Length>
+			<Room12>Games</Room12>
+			<Room12Width>null</Room12Width>
+			<Waterfront>None</Waterfront>
+			<WashroomsType5Pcs>2</WashroomsType5Pcs>
+			<WashroomsType1Level>2nd</WashroomsType1Level>
+			<WashroomsType2Level>2nd</WashroomsType2Level>
+			<WashroomsType3Level>2nd</WashroomsType3Level>
+			<WashroomsType4Level>Bsmt</WashroomsType4Level>
+			<WashroomsType5>1</WashroomsType5>
+			<WashroomsType5Level>Main</WashroomsType5Level>
+			<SpecialDesignation1>Unknown</SpecialDesignation1>
+			<SpecialDesignation2>null</SpecialDesignation2>
+			<SpecialDesignation3>null</SpecialDesignation3>
+			<SpecialDesignation4>null</SpecialDesignation4>
+			<SpecialDesignation5>null</SpecialDesignation5>
+			<SpecialDesignation6>null</SpecialDesignation6>
+			<Level10>2nd</Level10>
+			<Level11>Bsmt</Level11>
+			<Level12>Bsmt</Level12>
+			<TimestampSql>2017-03-21 17:50:51.0</TimestampSql>
+			<AreaCode>09</AreaCode>
+			<MunicipalityCode>09.07</MunicipalityCode>
+			<CommunityCode>09.07.0090</CommunityCode>
+			<MunicipalityDistrict>Newmarket</MunicipalityDistrict>
+			<Area>York</Area>
+			<Municipality>Newmarket</Municipality>
+			<Community>Stonehaven-Wyndham</Community>
+			<IdxUpdtedDt>2011-12-16 06:15:14.0</IdxUpdtedDt>
+			<PixUpdtedDt>2017-03-17 00:22:43.0</PixUpdtedDt>
+		</Listing>
+	</ResidentialProperty>
+</REProperties>
