@@ -48,6 +48,8 @@ public class FH_PropertyPO {
 	@Column(name = "comp_pts")
 	private String FrontingOnNSEW;
 
+	@Column(name = "acres")
+	private String Acreage;
 	
 	@Column(name = "front_ft", columnDefinition="Decimal(8,2)")
 	private Double LotFront;
@@ -323,12 +325,14 @@ public class FH_PropertyPO {
 	public void setWashroomsType4Level(String washroomsType4Level) {
 		WashroomsType4Level = washroomsType4Level;
 	}
-	
-	
-	
-	
 
+	public String getAcreage() {
+		return Acreage;
+	}
 
+	public void setAcreage(String acreage) {
+		Acreage = acreage;
+	}
 
 
 }

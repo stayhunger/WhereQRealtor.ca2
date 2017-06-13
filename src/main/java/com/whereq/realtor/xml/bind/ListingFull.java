@@ -378,8 +378,8 @@ public class ListingFull {
 	@XmlElement(name = "VirtualTourURL")
 	private String virtualTourURL;
 	
-	@XmlElement(name = "Assessment", type = Long.class)
-	private long assessment;
+	@XmlElement(name = "Assessment")
+	private int assessment;
 	
 	@XmlElement(name = "Uffi")
 	private String uffi;
@@ -447,7 +447,7 @@ public class ListingFull {
 	private String postalCode;
 	
 	@XmlElement(name = "Zoning")
-	private String zoing;
+	private String zoning;
 	
 	@XmlElement(name = "TypeOwnSrch")
 	private String typeOwnSreach;
@@ -477,7 +477,7 @@ public class ListingFull {
 	private int assessmentYear;
 	
 	@XmlElement(name = "GarageSpaces" )
-	private int garageSpaces;
+	private double garageSpaces;
 	
 	@XmlElement(name = "LeasedTerms")
 	private String leasedTerms;
@@ -1723,11 +1723,11 @@ public class ListingFull {
 		this.virtualTourURL = virtualTourURL;
 	}
 
-	public long getAssessment() {
+	public int getAssessment() {
 		return assessment;
 	}
 
-	public void setAssessment(long assessment) {
+	public void setAssessment(int assessment) {
 		this.assessment = assessment;
 	}
 
@@ -1933,12 +1933,12 @@ public class ListingFull {
 		this.postalCode = postalCode;
 	}
 
-	public String getZoing() {
-		return zoing;
+	public String getZoning() {
+		return zoning;
 	}
 
-	public void setZoing(String zoing) {
-		this.zoing = zoing;
+	public void setZoning(String zoning) {
+		this.zoning = zoning;
 	}
 
 	public String getTypeOwnSreach() {
@@ -2013,11 +2013,11 @@ public class ListingFull {
 		this.assessmentYear = assessmentYear;
 	}
 
-	public int getGarageSpaces() {
+	public double getGarageSpaces() {
 		return garageSpaces;
 	}
 
-	public void setGarageSpaces(int garageSpaces) {
+	public void setGarageSpaces(double garageSpaces) {
 		this.garageSpaces = garageSpaces;
 	}
 

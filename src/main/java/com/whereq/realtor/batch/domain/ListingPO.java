@@ -6,7 +6,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -82,11 +84,24 @@ public class ListingPO {
 //	@Column(name = "ad_text",nullable = false, length = 655)
 //	private byte[] RemarksForClients;	
 //
-//	@Column(name = "extras")
-//	private String Extras;	
+
+	@Column(name = "type")
+	private String Type;	
 	
 	
 	
+	public String getType() {
+		return Type;
+	}
+
+
+
+	public void setType(String type) {
+		Type = type;
+	}
+
+
+
 	public String getStatus() {
 		return Status;
 	}
