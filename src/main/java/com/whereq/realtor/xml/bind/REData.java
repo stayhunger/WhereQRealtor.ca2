@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class REData 
 {
 	@XmlElement(name = "REProperties")
-	private List<REProperties> reProperties = null;
+	private REProperties reProperties = null;
 
-	public List<REProperties> getReProperties() {
+	public REProperties getReProperties() {
 		return reProperties;
 	}
 
-	public void setReProperties(List<REProperties> reProperties) {
+	public void setReProperties(REProperties reProperties) {
 		this.reProperties = reProperties;
 	}
 

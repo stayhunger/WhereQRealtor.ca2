@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class ResidentialProperty 
 {
 	@XmlElement(name = "Listing")
-	private List<ListingFull> listings = null;
+	private Listing listings = null;
 
-	public List<ListingFull> getListings() {
+	public Listing getListings() {
 		return listings;
 	}
 
-	public void setListings(List<ListingFull> listings) {
+	public void setListings(Listing listings) {
 		this.listings = listings;
 	}
 

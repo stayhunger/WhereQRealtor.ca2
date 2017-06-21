@@ -12,14 +12,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class RETS 
 {
 	@XmlElement(name = "REData")
-	private List<REData> redata = null;
+	private REData redata = null;
 
-	public List<REData> getRedata() {
+	public REData getRedata() {
 		return redata;
 	}
 
-	public void setRedata(List<REData> redata) {
+	public void setRedata(REData redata) {
 		this.redata = redata;
 	}
+
+
 
 }

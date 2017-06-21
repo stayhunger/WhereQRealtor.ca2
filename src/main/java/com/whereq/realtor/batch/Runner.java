@@ -27,7 +27,7 @@ import com.whereq.realtor.batch.domain.FH_PropertyPO;
 import com.whereq.realtor.batch.domain.FH_PropertyRoomsPO;
 import com.whereq.realtor.batch.repository.ListingExtraRepository;
 import com.whereq.realtor.batch.domain.ListingPO;
-import com.whereq.realtor.xml.bind.ListingFull;
+import com.whereq.realtor.xml.bind.Listing;
 import com.whereq.realtor.xml.bind.REProperties;
 import com.whereq.realtor.xml.bind.RETS;
 import com.whereq.realtor.xml.bind.ResidentialProperty;
@@ -73,43 +73,43 @@ public class Runner {
 
         XMLInputFactory xif = XMLInputFactory.newFactory();
         xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/vow.xml"));
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/full/gta_residential5.xml"));
+        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/full/gta_residential5.xml"));
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         RETS  rets = (RETS) unmarshaller.unmarshal(xsr );
-        REProperties reProperties = rets.getRedata().get(0).getReProperties().get(0);
+        REProperties reProperties = rets.getRedata().getReProperties();
 		
 		for (ResidentialProperty residentialProperty : reProperties.getResidentialProperties()) {
-			for(ListingFull listingFull : residentialProperty.getListings())
+			Listing listingFull = residentialProperty.getListings();
 			{
 				poList.add(saveIntoListingTable(listingFull)) ;
-				addList.add(saveIntoAddressTable(listingFull));
-				extraList.add(saveIntoExtraTable(listingFull));
-				ppyList.add(saveIntoPropertyTable(listingFull));
-				ppyDetailsList.add(saveIntoPropertyDetailsTable(listingFull));
-				ppyRoomList.add(saveIntoPropertyRoomsTable(listingFull));
+//				addList.add(saveIntoAddressTable(listingFull));
+//				extraList.add(saveIntoExtraTable(listingFull));
+//				ppyList.add(saveIntoPropertyTable(listingFull));
+//				ppyDetailsList.add(saveIntoPropertyDetailsTable(listingFull));
+//				ppyRoomList.add(saveIntoPropertyRoomsTable(listingFull));
 
 			}	
 		}
 		
 		repository.save(poList);
 		
-		add_repository.save(addList);
-		
-		extra_repository.save(extraList);
-		
-		property_repository.save(ppyList);
-		
-		pptDetails_repository.save(ppyDetailsList);
-		
-		pptRooms_repository.save(ppyRoomList);
+//		add_repository.save(addList);
+//		
+//		extra_repository.save(extraList);
+//		
+//		property_repository.save(ppyList);
+//		
+//		pptDetails_repository.save(ppyDetailsList);
+//		
+//		pptRooms_repository.save(ppyRoomList);
 		
 	}
 	
 	
-	private ListingPO saveIntoListingTable(ListingFull listingFull)
+	private ListingPO saveIntoListingTable(Listing listingFull)
 	{
 		ListingPO listingPO = null;
 		
@@ -137,7 +137,7 @@ public class Runner {
 		
 	}
 	
-	private FH_ListingAddrPO saveIntoAddressTable(ListingFull listingFull)
+	private FH_ListingAddrPO saveIntoAddressTable(Listing listingFull)
 	{
 
 		FH_ListingAddrPO addrPO = null;
@@ -165,7 +165,7 @@ public class Runner {
 		
 	}
 	
-	private FH_ListingExtraPO saveIntoExtraTable(ListingFull listingFull)
+	private FH_ListingExtraPO saveIntoExtraTable(Listing listingFull)
 	{
 
 		
@@ -182,7 +182,7 @@ public class Runner {
 		return extraPO	;
 	}
 	
-	private FH_PropertyPO saveIntoPropertyTable(ListingFull listingFull)
+	private FH_PropertyPO saveIntoPropertyTable(Listing listingFull)
 	{
 
 		FH_PropertyPO ppyPO = null;
@@ -222,7 +222,7 @@ public class Runner {
 		
 	}
 	
-	private FH_PropertyDetailsPO saveIntoPropertyDetailsTable(ListingFull listingFull)
+	private FH_PropertyDetailsPO saveIntoPropertyDetailsTable(Listing listingFull)
 	{
 
 		FH_PropertyDetailsPO ppyDtlPO = null;
@@ -288,7 +288,7 @@ public class Runner {
 		
 	}
 	
-	private FH_PropertyRoomsPO saveIntoPropertyRoomsTable(ListingFull listingFull)
+	private FH_PropertyRoomsPO saveIntoPropertyRoomsTable(Listing listingFull)
 	{
 
 		

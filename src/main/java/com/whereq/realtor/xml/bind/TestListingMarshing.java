@@ -18,12 +18,12 @@ public class TestListingMarshing
 	static ResidentialProperty residentialProperty = new ResidentialProperty();
 	static 
 	{
-		residentialProperty.setListings(new ArrayList<ListingFull>());
+		residentialProperty.setListings(new Listing());
 		
-		ListingFull listingFull = new ListingFull();
+		Listing listingFull = new Listing();
 		listingFull.setMls("MLS_TEST");
 		
-		residentialProperty.getListings().add(listingFull);
+		residentialProperty.getListings();
 	}
 	
 	public static void main(String[] args) throws JAXBException , XMLStreamException
@@ -44,19 +44,16 @@ public class TestListingMarshing
 
         XMLInputFactory xif = XMLInputFactory.newFactory();
         xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/vow.xml"));
+        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/vow.xml"));
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         RETS  rets = (RETS) unmarshaller.unmarshal(xsr );
-        REProperties reProperties = rets.getRedata().get(0).getReProperties().get(0);
+        REProperties reProperties = rets.getRedata().getReProperties();
         int i = 0;
 		for (ResidentialProperty residentialProperty : reProperties.getResidentialProperties()) {
-			for(ListingFull listingFull : residentialProperty.getListings())
-			{
-				System.out.println(listingFull.getMls());
+				System.out.println(residentialProperty.getListings().getMls());
 				i++;
-			}	
 		}
 		System.out.println("total: " + i);
 	}
@@ -68,6 +65,6 @@ public class TestListingMarshing
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
  
 		jaxbMarshaller.marshal(residentialProperty, System.out);
-		jaxbMarshaller.marshal(residentialProperty, new File("c:/tmp/vow.xml"));
+		jaxbMarshaller.marshal(residentialProperty, new File("c:/tmp/test.xml"));
 	}
 }
