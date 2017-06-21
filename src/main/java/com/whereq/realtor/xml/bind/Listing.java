@@ -12,7 +12,7 @@ import com.whereq.util.DateAdapter;
 
 @XmlRootElement(name = "Listing")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ListingFull {
+public class Listing {
 	private Integer id;
 
 	@XmlElement(name = "AirConditioning")
