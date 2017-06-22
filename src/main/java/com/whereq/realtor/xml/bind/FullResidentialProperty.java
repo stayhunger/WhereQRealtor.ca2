@@ -20,7 +20,13 @@ public class FullResidentialProperty
 	
 	//no need for getter as it implement by default
 	
-    @Override
+    public FullResListing getListing() {
+		return listing;
+	}
+
+
+
+	@Override
     public String toString() {
         return listing ==null?"nothing":listing.toString();
     }

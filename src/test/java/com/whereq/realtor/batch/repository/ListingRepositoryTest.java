@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.whereq.realtor.batch.domain.Listing;
+import com.whereq.realtor.batch.domain.ListingFullPO;
 
 @RunWith( SpringJUnit4ClassRunner.class )
 @ContextConfiguration (locations = {"classpath*:**/testContext.xml"})
@@ -18,8 +18,8 @@ public class ListingRepositoryTest extends AbstractTransactionalJUnit4SpringCont
 	
 	@Test
 	public void test() {
-		Listing listing = new Listing();
-		listing.setMls("mls");
+		ListingFullPO listing = new ListingFullPO();
+		listing.setMLS("mls");
 		listingRepository.save(listing);
 	}
 

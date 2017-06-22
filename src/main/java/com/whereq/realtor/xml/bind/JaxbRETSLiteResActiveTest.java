@@ -80,8 +80,8 @@ public class JaxbRETSLiteResActiveTest {
         List<LiteCondoProperty>  activeResListings2 = response2.getActiveProperties();
         System.out.println("active condo listings : " + activeResListings2.size());
         for (LiteCondoProperty arl : activeResListings2) {
-            System.out.println("MLS : " + arl.getMls());
-            System.out.println("Status : " + arl.getStatus());
+            //System.out.println("MLS : " + arl.getMls());
+            //System.out.println("Status : " + arl.getStatus());
         }
         
         

@@ -1,6 +1,5 @@
 package com.whereq.realtor.batch;
 
-import java.io.File;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -15,28 +14,28 @@ import javax.xml.transform.stream.StreamSource;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
-import com.whereq.realtor.batch.repository.AddressRepository;
-import com.whereq.realtor.batch.repository.FHListingRepository;
-import com.whereq.realtor.batch.repository.FHPropertyDetailsRepository;
-import com.whereq.realtor.batch.repository.FHPropertyRepository;
-import com.whereq.realtor.batch.repository.FHPropertyRoomsRepository;
 import com.whereq.realtor.batch.domain.FH_ListingAddrPO;
 import com.whereq.realtor.batch.domain.FH_ListingExtraPO;
 import com.whereq.realtor.batch.domain.FH_PropertyDetailsPO;
 import com.whereq.realtor.batch.domain.FH_PropertyPO;
 import com.whereq.realtor.batch.domain.FH_PropertyRoomsPO;
+import com.whereq.realtor.batch.domain.ListingFullPO;
+import com.whereq.realtor.batch.domain.ListingActivePO;
+import com.whereq.realtor.batch.repository.AddressRepository;
+import com.whereq.realtor.batch.repository.FHPropertyDetailsRepository;
+import com.whereq.realtor.batch.repository.FHPropertyRepository;
+import com.whereq.realtor.batch.repository.FHPropertyRoomsRepository;
 import com.whereq.realtor.batch.repository.ListingExtraRepository;
-import com.whereq.realtor.batch.domain.ListingPO;
-import com.whereq.realtor.xml.bind.Listing;
-import com.whereq.realtor.xml.bind.REProperties;
-import com.whereq.realtor.xml.bind.RETS;
-import com.whereq.realtor.xml.bind.ResidentialProperty;
+import com.whereq.realtor.batch.repository.ListingRepository;
+import com.whereq.realtor.xml.bind.FullResListing;
+import com.whereq.realtor.xml.bind.FullResidentialProperty;
+import com.whereq.realtor.xml.bind.FullResidentialPropertyWrapper;
 
 @Component(value="runner")
 public class Runner {
 
 	@Inject
-	private FHListingRepository repository;
+	private ListingRepository repository;
 
 	@Inject
 	private AddressRepository add_repository;
@@ -56,7 +55,7 @@ public class Runner {
 	
 	public void run() throws JAXBException, XMLStreamException{
 		
-		List<ListingPO> poList = Lists.newArrayList();
+		List<ListingFullPO> poList = Lists.newArrayList();
 		
 		List<FH_ListingAddrPO> addList = Lists.newArrayList();
 		
@@ -69,7 +68,7 @@ public class Runner {
 		List<FH_PropertyRoomsPO> ppyRoomList = Lists.newArrayList();
 		
 		
-        JAXBContext jc = JAXBContext.newInstance(RETS.class);
+        JAXBContext jc = JAXBContext.newInstance(FullResidentialPropertyWrapper.class);
 
         XMLInputFactory xif = XMLInputFactory.newFactory();
         xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
@@ -78,13 +77,11 @@ public class Runner {
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/full/gta_residential5.xml"));
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
-        RETS  rets = (RETS) unmarshaller.unmarshal(xsr );
-        REProperties reProperties = rets.getRedata().getReProperties();
-		
-		for (ResidentialProperty residentialProperty : reProperties.getResidentialProperties()) {
-			Listing listingFull = residentialProperty.getListings();
+        FullResidentialPropertyWrapper  rets = (FullResidentialPropertyWrapper) unmarshaller.unmarshal(xsr );
+        
+		for (FullResidentialProperty residentialProperty : rets.getActResProperties()) {
 			{
-				poList.add(saveIntoListingTable(listingFull)) ;
+				poList.add(saveIntoListingTable(residentialProperty.getListing())) ;
 //				addList.add(saveIntoAddressTable(listingFull));
 //				extraList.add(saveIntoExtraTable(listingFull));
 //				ppyList.add(saveIntoPropertyTable(listingFull));
@@ -109,13 +106,13 @@ public class Runner {
 	}
 	
 	
-	private ListingPO saveIntoListingTable(Listing listingFull)
+	private ListingFullPO saveIntoListingTable(FullResListing listingFull)
 	{
-		ListingPO listingPO = null;
+		ListingFullPO listingPO = null;
 		
 		//fh_listing
 		System.out.println(listingFull.getMls() + " into fr_listing table:");
-		listingPO = new ListingPO();
+		listingPO = new ListingFullPO();
 		listingPO.setMLS(listingFull.getMls());
 		listingPO.setAddress(listingFull.getAddress());
 		listingPO.setListPrice(listingFull.getListPrice());
@@ -131,13 +128,12 @@ public class Runner {
 		listingPO.setPixUpdtedDt(listingFull.getPixUpdatedDate());
 		listingPO.setStatus(listingFull.getStatus());
 		listingPO.setListBrokerage(listingFull.getListBrokerage());
-		listingPO.setType("RES");
 		
 		return listingPO;
 		
 	}
 	
-	private FH_ListingAddrPO saveIntoAddressTable(Listing listingFull)
+	private FH_ListingAddrPO saveIntoAddressTable(FullResListing listingFull)
 	{
 
 		FH_ListingAddrPO addrPO = null;
@@ -165,7 +161,7 @@ public class Runner {
 		
 	}
 	
-	private FH_ListingExtraPO saveIntoExtraTable(Listing listingFull)
+	private FH_ListingExtraPO saveIntoExtraTable(FullResListing listingFull)
 	{
 
 		
@@ -182,7 +178,7 @@ public class Runner {
 		return extraPO	;
 	}
 	
-	private FH_PropertyPO saveIntoPropertyTable(Listing listingFull)
+	private FH_PropertyPO saveIntoPropertyTable(FullResListing listingFull)
 	{
 
 		FH_PropertyPO ppyPO = null;
@@ -222,7 +218,7 @@ public class Runner {
 		
 	}
 	
-	private FH_PropertyDetailsPO saveIntoPropertyDetailsTable(Listing listingFull)
+	private FH_PropertyDetailsPO saveIntoPropertyDetailsTable(FullResListing listingFull)
 	{
 
 		FH_PropertyDetailsPO ppyDtlPO = null;
@@ -288,7 +284,7 @@ public class Runner {
 		
 	}
 	
-	private FH_PropertyRoomsPO saveIntoPropertyRoomsTable(Listing listingFull)
+	private FH_PropertyRoomsPO saveIntoPropertyRoomsTable(FullResListing listingFull)
 	{
 
 		

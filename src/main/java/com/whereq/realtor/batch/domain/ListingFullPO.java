@@ -19,8 +19,8 @@ import org.hibernate.annotations.GenericGenerator;
  */
 @Entity
 //@Table (name = "fh_listing", uniqueConstraints={@UniqueConstraint(columnNames = {"ml_num" })})
-@Table (name = "listing_active")
-public class ListingPO {
+@Table (name = "fh_listing")
+public class ListingFullPO {
 	
 	/**
 	 * 
