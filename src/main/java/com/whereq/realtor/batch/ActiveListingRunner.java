@@ -36,32 +36,38 @@ public class ActiveListingRunner {
 		
 		List<ListingActivePO> poList = Lists.newArrayList();
 		
+		System.out.println("Removing all active listing first, size: " + repository.count());
+		repository.deleteAll();
+		
 		
         JAXBContext jc = JAXBContext.newInstance(LiteResPropertyWrapper.class);
 
         XMLInputFactory xif = XMLInputFactory.newFactory();
         xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_freehold.xml"));
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
+        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_freehold.xml"));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold3.xml"));
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         LiteResPropertyWrapper  response = (LiteResPropertyWrapper) unmarshaller.unmarshal(xsr );
         List<LiteResProperty> actResListings = response.getActiveProperties();
-        int i;
+        int i=0;
 		for (LiteResProperty liteResPro : actResListings) {
 			{
 				
-				//System.out.println(repository.findOne(1L).getMLS());
-				//System.out.println(repository.findOne(2L).getMLS());
-				poList.add(saveIntoListingActiveTable(liteResPro)) ;
-				//System.out.println("i++:"+liteResPro.toString());
+				if (repository.findByMLS(liteResPro.getMls()) == null)
+				{
+					poList.add(saveIntoListingActiveTable(liteResPro)) ;
+					System.out.println(++i+ ":"+liteResPro.toString());
+				} 
+				else
+					System.out.println(liteResPro.getMls() + " exists in DB already !");
 
 			}	
 		}
 		
-		repository.save(poList);
+		System.out.println("Total: "+ i + " inserted !");
 		
-
+		repository.save(poList);
 		
 	}
 	
