@@ -12,6 +12,7 @@ import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -25,6 +26,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @ComponentScan("com.whereq.realtor.batch")
 @EntityScan("com.whereq.realtor.batch.domain")  
 @EnableJpaRepositories(basePackages="com.whereq.realtor.batch.repository")
+@PropertySource("classpath:application.properties")
 public class DatabaseConfiguration {
 
 	    @Resource

@@ -12,7 +12,7 @@
   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
      <!-- Here we can refer to the variable 
       defined at the resource1.properties ${TREB_HOME} -->
-     <file>${TREB_HOME}/logs/active_runnger-${myTimestamp}.log</file>
+     <file>${TREB_HOME}/maven/logs/active_runnger-${myTimestamp}.log</file>
      <encoder>
        <pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} - %msg%n</pattern>
      </encoder>

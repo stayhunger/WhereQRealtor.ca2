@@ -2,6 +2,7 @@ package com.whereq.realtor.batch;
 
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -13,6 +14,8 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
@@ -29,7 +32,9 @@ public class ActiveListingRunner {
 
 	@Inject
 	private ListingActiveRepository repository;
-
+	
+    @Resource
+    private Environment env;
 	
 	public void run() throws JAXBException, XMLStreamException{
 		
@@ -42,11 +47,16 @@ public class ActiveListingRunner {
 		
 		//scan active resedentials
         JAXBContext jc = JAXBContext.newInstance(LiteResPropertyWrapper.class);
-
+        System.out.println("jaxbContent class: " + jc.getClass());
+        
         XMLInputFactory xif = XMLInputFactory.newFactory();
         //xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
+        
+        String xmlpath = env.getProperty("ACTIVE_RES_PATH");
+        System.out.println("env: " + xmlpath);
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_freehold.xml"));
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
+        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         LiteResPropertyWrapper  response = (LiteResPropertyWrapper) unmarshaller.unmarshal(xsr );
@@ -74,8 +84,13 @@ public class ActiveListingRunner {
 
         unmarshaller = jc.createUnmarshaller();
         xif = XMLInputFactory.newFactory();
-        xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_condo.xml"));
-
+        
+        String xmlCondoPath = env.getProperty("ACTIVE_CND_PATH");
+        System.out.println("env: " + xmlCondoPath);
+       // xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_condo.xml"));
+        xsr = xif.createXMLStreamReader(new StreamSource(xmlCondoPath));
+       // xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_condo.xml"));
+        
         LiteCondoPropertyWrapper  responseCondo = (LiteCondoPropertyWrapper) unmarshaller.unmarshal(xsr );
         List<LiteCondoProperty> actCndListings = responseCondo.getActiveProperties();
         int j=0;
@@ -97,6 +112,7 @@ public class ActiveListingRunner {
 		logger.info("Total: "+ (i+j) + " inserted on all active properties!");
 		
 		repository.save(poList);
+		System.out.println("Total: "+ (i+j) + " inserted on all active properties!");
 		
 	}
 	
@@ -105,7 +121,7 @@ public class ActiveListingRunner {
 	{
 		ListingActivePO listingPO = null;
 		
-		System.out.println(litResPro.getMls() + " into listing_active table: for residentila");
+		//System.out.println(litResPro.getMls() + " into listing_active table: for residentila");
 		listingPO = new ListingActivePO();
 		listingPO.setMLS(litResPro.getMls());
 		listingPO.setStatus(litResPro.getStatus());
@@ -119,7 +135,7 @@ public class ActiveListingRunner {
 	{
 		ListingActivePO listingPO = null;
 		
-		System.out.println(litCndPro.getMls() + " into listing_active table: for condo");
+		//System.out.println(litCndPro.getMls() + " into listing_active table: for condo");
 		listingPO = new ListingActivePO();
 		listingPO.setMLS(litCndPro.getMls());
 		listingPO.setStatus(litCndPro.getStatus());
