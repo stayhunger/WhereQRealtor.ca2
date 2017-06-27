@@ -1,5 +1,7 @@
 package com.whereq.realtor.batch;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -14,7 +16,6 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
@@ -41,7 +42,8 @@ public class ActiveListingRunner {
 		 Logger logger = LoggerFactory.getLogger(ActiveListingRunner.class);	
 		
 		List<ListingActivePO> poList = Lists.newArrayList();
-		
+		System.out.println("============================================================");
+		System.out.println("Start: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
 		System.out.println("Removing all active listing first, size: " + repository.count());
 		repository.deleteAll();
 		
@@ -56,7 +58,6 @@ public class ActiveListingRunner {
         System.out.println("env: " + xmlpath);
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_freehold.xml"));
         XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         LiteResPropertyWrapper  response = (LiteResPropertyWrapper) unmarshaller.unmarshal(xsr );
@@ -113,6 +114,8 @@ public class ActiveListingRunner {
 		
 		repository.save(poList);
 		System.out.println("Total: "+ (i+j) + " inserted on all active properties!");
+		System.out.println("End: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
+		System.out.println("============================================================");
 		
 	}
 	
