@@ -1,7 +1,10 @@
 package com.whereq.realtor.batch;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -11,6 +14,9 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.transform.stream.StreamSource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
@@ -52,8 +58,14 @@ public class Runner {
 	@Inject
 	private FHPropertyRoomsRepository pptRooms_repository;
 	
+    @Resource
+    private Environment env;
+	
 	
 	public void run() throws JAXBException, XMLStreamException{
+		
+		Logger logger = LoggerFactory.getLogger(Runner.class);	
+
 		
 		List<ListingFullPO> poList = Lists.newArrayList();
 		
@@ -67,41 +79,65 @@ public class Runner {
 
 		List<FH_PropertyRoomsPO> ppyRoomList = Lists.newArrayList();
 		
+		System.out.println("============================================================");
+		System.out.println("Start: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
 		
         JAXBContext jc = JAXBContext.newInstance(FullResidentialPropertyWrapper.class);
+        System.out.println("jaxbContent class: " + jc.getClass());
 
         XMLInputFactory xif = XMLInputFactory.newFactory();
-        xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_freehold.xml"));
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/vow.xml"));
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/full/gta_residential5.xml"));
+        String xmlpath = env.getProperty("FULL_RES_PATH");
+        System.out.println("env: " + xmlpath);
+//        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_residential.xml"));
+
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         FullResidentialPropertyWrapper  rets = (FullResidentialPropertyWrapper) unmarshaller.unmarshal(xsr );
         
+        int i = 0;
+        int j = 0;
 		for (FullResidentialProperty residentialProperty : rets.getActResProperties()) {
 			{
-				poList.add(saveIntoListingTable(residentialProperty.getListing())) ;
-//				addList.add(saveIntoAddressTable(listingFull));
-//				extraList.add(saveIntoExtraTable(listingFull));
-//				ppyList.add(saveIntoPropertyTable(listingFull));
-//				ppyDetailsList.add(saveIntoPropertyDetailsTable(listingFull));
-//				ppyRoomList.add(saveIntoPropertyRoomsTable(listingFull));
+				FullResListing listFromXml = residentialProperty.getListing();
+				String mls = listFromXml.getMls(); 
+				if (repository.findByMLS(mls) == null)
+				{
+					i++;
+					poList.add(saveIntoListingTable(listFromXml)) ;
+					addList.add(saveIntoAddressTable(listFromXml));
+					extraList.add(saveIntoExtraTable(listFromXml));
+					ppyList.add(saveIntoPropertyTable(listFromXml));
+					ppyDetailsList.add(saveIntoPropertyDetailsTable(listFromXml));
+					ppyRoomList.add(saveIntoPropertyRoomsTable(listFromXml));
+					
+				}
+				else
+				{
+					System.out.println("MLS#: " + mls + " existing alreay, skip it." );
+					j++;
+				}
 
 			}	
 		}
 		
 		repository.save(poList);
 		
-//		add_repository.save(addList);
-//		
-//		extra_repository.save(extraList);
-//		
-//		property_repository.save(ppyList);
-//		
-//		pptDetails_repository.save(ppyDetailsList);
-//		
-//		pptRooms_repository.save(ppyRoomList);
+		add_repository.save(addList);
+		
+		extra_repository.save(extraList);
+		
+		property_repository.save(ppyList);
+		
+		pptDetails_repository.save(ppyDetailsList);
+		
+		pptRooms_repository.save(ppyRoomList);
+		
+		
+		System.out.println("Total: ["+ i + "] inserted on  fh_listing table, [" + j + "] listings exist in the table already !");
+		System.out.println("End: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
+		System.out.println("============================================================");
+
 		
 	}
 	
@@ -139,7 +175,7 @@ public class Runner {
 		FH_ListingAddrPO addrPO = null;
 		
 		//fh_listing
-		System.out.println(listingFull.getMls() + " into fr_address table:");
+		//System.out.println(listingFull.getMls() + " into fr_address table:");
 		//fh_address
 		addrPO = new FH_ListingAddrPO();
 		addrPO.setMLS(listingFull.getMls());
@@ -182,7 +218,7 @@ public class Runner {
 	{
 
 		FH_PropertyPO ppyPO = null;
-		System.out.println(listingFull.getMls() + " into fr_property table:");
+		//System.out.println(listingFull.getMls() + " into fr_property table:");
 		//fh property
 		ppyPO = new FH_PropertyPO();
 		ppyPO.setMLS(listingFull.getMls());
@@ -222,7 +258,7 @@ public class Runner {
 	{
 
 		FH_PropertyDetailsPO ppyDtlPO = null;
-		System.out.println(listingFull.getMls() + " into fr_property_details table:");
+		//System.out.println(listingFull.getMls() + " into fr_property_details table:");
 
 		//fh_property_details
 		ppyDtlPO = new FH_PropertyDetailsPO();
@@ -289,7 +325,7 @@ public class Runner {
 
 		
 		FH_PropertyRoomsPO ppyRoomPO = null;
-		System.out.println(listingFull.getMls() + " into fr_property_rooms table:");
+		//System.out.println(listingFull.getMls() + " into fr_property_rooms table:");
 
 		//fh property rooms
 				//fh property rooms

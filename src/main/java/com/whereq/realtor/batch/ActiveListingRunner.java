@@ -48,7 +48,7 @@ public class ActiveListingRunner {
 	
 	public void run() throws JAXBException, XMLStreamException{
 		
-		 Logger logger = LoggerFactory.getLogger(ActiveListingRunner.class);	
+		Logger logger = LoggerFactory.getLogger(ActiveListingRunner.class);	
 		
 		List<ListingActivePO> poList = Lists.newArrayList();
 		System.out.println("============================================================");
@@ -61,8 +61,6 @@ public class ActiveListingRunner {
         System.out.println("jaxbContent class: " + jc.getClass());
         
         XMLInputFactory xif = XMLInputFactory.newFactory();
-        //xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-        
         String xmlpath = env.getProperty("ACTIVE_RES_PATH");
         System.out.println("env: " + xmlpath);
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_freehold.xml"));
