@@ -35,12 +35,18 @@ public class DatabaseConfiguration {
 	    @Bean
 	    public DataSource dataSource() throws IllegalStateException, PropertyVetoException {
 	    	ComboPooledDataSource dataSource = new ComboPooledDataSource();
-	        dataSource.setDriverClass("com.mysql.jdbc.Driver");
-	        // IMPORTANT! THE rewriteBatchedStatements=true is required, otherwise mysql won'tchange statements to one batch insert!
-	        dataSource.setJdbcUrl("jdbc:mysql://supernova:3306/treb?rewriteBatchedStatements=true");
-//	        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/whereq_realtor?rewriteBatchedStatements=true");
-	        dataSource.setUser("root");
-	        dataSource.setPassword("root");
+//	        dataSource.setDriverClass("com.mysql.jdbc.Driver");
+//	        // IMPORTANT! THE rewriteBatchedStatements=true is required, otherwise mysql won'tchange statements to one batch insert!
+//	        dataSource.setJdbcUrl("jdbc:mysql://supernova:3306/treb?rewriteBatchedStatements=true");
+////	        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/whereq_realtor?rewriteBatchedStatements=true");
+//	        dataSource.setUser("root");
+//	        dataSource.setPassword("root");
+	        
+	        dataSource.setDriverClass(env.getProperty("spring.datasource.driverClassName"));
+	        // IMPORTANT! THE rewriteBatchedStatements=true is required, otherwise mysql won't change statements to one batch insert!
+	        dataSource.setJdbcUrl(env.getProperty("spring.datasource.url"));
+	        dataSource.setUser(env.getProperty("spring.datasource.username"));
+	        dataSource.setPassword(env.getProperty("spring.datasource.password"));
 	 
 	        return dataSource;
 	    }

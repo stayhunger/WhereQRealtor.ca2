@@ -1,3 +1,12 @@
+/*
+ * 
+ * TODO LIST
+ * 		1. 2017/06/28
+ * 			need to delete records just before run persistant, for now, it takes 30 secs for each job run
+ * 			which means, the active_listing table will be empty during this time
+ * 
+ */
+
 package com.whereq.realtor.batch;
 
 import java.text.SimpleDateFormat;
@@ -90,7 +99,7 @@ public class ActiveListingRunner {
         System.out.println("env: " + xmlCondoPath);
        // xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_condo.xml"));
         xsr = xif.createXMLStreamReader(new StreamSource(xmlCondoPath));
-       // xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_condo.xml"));
+        //xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_condo.xml"));
         
         LiteCondoPropertyWrapper  responseCondo = (LiteCondoPropertyWrapper) unmarshaller.unmarshal(xsr );
         List<LiteCondoProperty> actCndListings = responseCondo.getActiveProperties();
