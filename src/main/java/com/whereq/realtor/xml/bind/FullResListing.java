@@ -156,7 +156,7 @@ public class FullResListing {
 	private String lotSizeCode;
 	
 	@XmlElement(name = "ListPrice", type = Float.class)
-	private float listPrice;
+	private double listPrice;
 	
 	@XmlElement(name = "MLS")
 	private String mls;
@@ -973,7 +973,7 @@ public class FullResListing {
 		this.lotSizeCode = lotSizeCode;
 	}
 
-	public float getListPrice() {
+	public Double getListPrice() {
 		return listPrice;
 	}
 

@@ -29,7 +29,7 @@ public interface ListingRepository extends JpaRepository<ListingFullPO,Long> {
 	
 	@Modifying
 	@Query("update ListingFullPO u set u.ListPrice = ?1 where u.MLS = ?2")
-	int setNewPrice(Double newPrice, String MLS);
+	public int setNewPrice(Double newPrice, String MLS);
 	
 	@Query("select u from ListingFullPO u where  u.Status = :Status")
 	List<ListingFullPO> findByStatus(@Param("Status") String status);

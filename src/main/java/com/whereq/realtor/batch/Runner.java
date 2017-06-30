@@ -88,8 +88,8 @@ public class Runner {
         XMLInputFactory xif = XMLInputFactory.newFactory();
         String xmlpath = env.getProperty("FULL_RES_PATH");
         System.out.println("env: " + xmlpath);
-//        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_residential.xml"));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
+        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_residential.xml"));
 
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
@@ -97,11 +97,13 @@ public class Runner {
         
         int i = 0;
         int j = 0;
+        int pc = 0;
 		for (FullResidentialProperty residentialProperty : rets.getActResProperties()) {
 			{
 				FullResListing listFromXml = residentialProperty.getListing();
 				String mls = listFromXml.getMls(); 
-				if (repository.findByMLS(mls) == null)
+				ListingFullPO exist = repository.findByMLS(mls);
+				if (exist == null)
 				{
 					i++;
 					poList.add(saveIntoListingTable(listFromXml)) ;
@@ -114,7 +116,16 @@ public class Runner {
 				}
 				else
 				{
-					System.out.println("MLS#: " + mls + " existing alreay, skip it." );
+					System.out.println("MLS#: " + mls + " existing alreay, check to see if pc changed ...." );
+					System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
+					if (exist.getListPrice() != listFromXml.getListPrice()) 
+					{
+						exist.setListPrice(listFromXml.getListPrice());
+						exist.setStatus("Pc");
+						repository.save(exist);
+						System.out.println("update mls: " + mls + " to the new price.");
+						pc++;
+					}
 					j++;
 				}
 
@@ -134,7 +145,7 @@ public class Runner {
 		pptRooms_repository.save(ppyRoomList);
 		
 		
-		System.out.println("Total: ["+ i + "] inserted on  fh_listing table, [" + j + "] listings exist in the table already !");
+		System.out.println("Total: ["+ i + "] inserted on  fh_listing table, [" + j + "] listings exist in the table already, [" + pc +"] listings changed prices!");
 		System.out.println("End: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
 		System.out.println("============================================================");
 
