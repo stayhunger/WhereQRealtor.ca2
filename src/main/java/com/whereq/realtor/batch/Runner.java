@@ -66,7 +66,6 @@ public class Runner {
 		
 		Logger logger = LoggerFactory.getLogger(Runner.class);	
 
-		
 		List<ListingFullPO> poList = Lists.newArrayList();
 		
 		List<FH_ListingAddrPO> addList = Lists.newArrayList();
@@ -120,7 +119,7 @@ public class Runner {
 					System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
 					if (exist.getListPrice() != listFromXml.getListPrice()) 
 					{
-						exist.setListPrice(listFromXml.getListPrice());
+						exist.setNewListPrice(listFromXml.getListPrice());
 						exist.setStatus("Pc");
 						repository.save(exist);
 						System.out.println("update mls: " + mls + " to the new price.");

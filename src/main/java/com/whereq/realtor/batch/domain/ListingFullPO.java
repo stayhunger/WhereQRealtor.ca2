@@ -48,7 +48,10 @@ public class ListingFullPO {
 	@Column(name = "lp_dol", columnDefinition="Decimal(11)")
 	private Double ListPrice;
 
+	@Column(name = "lp_dol2", columnDefinition="Decimal(11)")
+	private Double NewListPrice;
 	
+
 	@Column(name = "taxes", columnDefinition="Decimal(8,2)")
 	private Double Taxes;
 	
@@ -313,6 +316,15 @@ public class ListingFullPO {
 	}
 
 
+	public Double getNewListPrice() {
+		return NewListPrice;
+	}
+
+
+
+	public void setNewListPrice(Double newListPrice) {
+		NewListPrice = newListPrice;
+	}
 
 
 }

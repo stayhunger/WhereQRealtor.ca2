@@ -16,7 +16,10 @@ public class Main {
 	public static void main(String[] args) {
 		final ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 		try {
-			//context.getBean("active_runner",ActiveListingRunner.class).run();
+			//active runner to update all active lstings
+			context.getBean("active_runner",ActiveListingRunner.class).run();
+			
+			//to load all freehold listings
 			context.getBean("runner",Runner.class).run();
 		} catch (BeansException e) {
 			// TODO Auto-generated catch block
