@@ -36,7 +36,7 @@ import com.whereq.realtor.batch.repository.ListingExtraRepository;
 import com.whereq.realtor.batch.repository.ListingRepository;
 import com.whereq.realtor.xml.bind.FullCondoProperty;
 import com.whereq.realtor.xml.bind.FullCondoPropertyWrapper;
-import com.whereq.realtor.xml.bind.FullResListing;
+import com.whereq.realtor.xml.bind.FullListing;
 import com.whereq.realtor.xml.bind.FullResidentialProperty;
 import com.whereq.realtor.xml.bind.FullResidentialPropertyWrapper;
 
@@ -108,7 +108,7 @@ public class Runner {
         int pc = 0;
 		for (FullResidentialProperty residentialProperty : rets.getActResProperties()) {
 			{
-				FullResListing listFromXml = residentialProperty.getListing();
+				FullListing listFromXml = residentialProperty.getListing();
 				String mls = listFromXml.getMls(); 
 				ListingFullPO exist = repository.findByMLS(mls);
 				if (exist == null)
@@ -161,7 +161,7 @@ public class Runner {
         int pc2 = 0;
 		for (FullCondoProperty condoProperty : rets3.getFullCndProperties()) {
 			{
-				FullResListing listFromXml = condoProperty.getListing();
+				FullListing listFromXml = condoProperty.getListing();
 				String mls = listFromXml.getMls(); 
 				ListingFullPO exist = repository.findByMLS(mls);
 				if (exist == null)
@@ -221,7 +221,7 @@ public class Runner {
 	}
 	
 	
-	private ListingFullPO saveIntoListingTable(FullResListing listingFull, String type)
+	private ListingFullPO saveIntoListingTable(FullListing listingFull, String type)
 	{
 		ListingFullPO listingPO = null;
 		
@@ -249,7 +249,7 @@ public class Runner {
 		
 	}
 	
-	private ListingAddrPO saveIntoAddressTable(FullResListing listingFull)
+	private ListingAddrPO saveIntoAddressTable(FullListing listingFull)
 	{
 
 		ListingAddrPO addrPO = null;
@@ -277,7 +277,7 @@ public class Runner {
 		
 	}
 	
-	private ListingExtraPO saveIntoExtraTable(FullResListing listingFull)
+	private ListingExtraPO saveIntoExtraTable(FullListing listingFull)
 	{
 
 		
@@ -294,7 +294,7 @@ public class Runner {
 		return extraPO	;
 	}
 	
-	private PropertyPO saveIntoPropertyTable(FullResListing listingFull)
+	private PropertyPO saveIntoPropertyTable(FullListing listingFull)
 	{
 
 		PropertyPO ppyPO = null;
@@ -334,7 +334,7 @@ public class Runner {
 		
 	}
 	
-	private PropertyDetailsPO saveIntoPropertyDetailsTable(FullResListing listingFull)
+	private PropertyDetailsPO saveIntoPropertyDetailsTable(FullListing listingFull)
 	{
 
 		PropertyDetailsPO ppyDtlPO = null;
@@ -400,7 +400,7 @@ public class Runner {
 		
 	}
 	
-	private PropertyRoomsPO saveIntoPropertyRoomsTable(FullResListing listingFull)
+	private PropertyRoomsPO saveIntoPropertyRoomsTable(FullListing listingFull)
 	{
 
 		
@@ -514,7 +514,7 @@ public class Runner {
 	}
 
 	
-	private CondoExtraPO saveIntoCondoExtraTable(FullResListing listingFull)
+	private CondoExtraPO saveIntoCondoExtraTable(FullListing listingFull)
 	{
 
 		

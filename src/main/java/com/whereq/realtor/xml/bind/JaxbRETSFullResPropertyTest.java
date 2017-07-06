@@ -22,7 +22,7 @@ public class JaxbRETSFullResPropertyTest {
     	//to tell if we use the MOXY jar eclipselink.jar in your classpath
        // System.out.println(JAXBContext.newInstance(RETS.class).getClass());
  
-        FullResListing l1 = new FullResListing();
+        FullListing l1 = new FullListing();
         l1.setAddress("21 Pineway Ave");;
         l1.setArea("York");
         l1.setListPrice(649900.0F);
@@ -33,7 +33,7 @@ public class JaxbRETSFullResPropertyTest {
         rp.setListing(l1);
         reProperties.add(rp);
         
-        FullResListing l2 = new FullResListing();
+        FullListing l2 = new FullListing();
         l2.setAddress("23 Pineway Ave");;
         l2.setArea("Toronto");
         l2.setListPrice(589900.0F);

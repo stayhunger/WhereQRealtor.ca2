@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import org.eclipse.persistence.oxm.annotations.XmlPath;
 
 /*
- * Active XML format
+ * Full Condo XML format
 	<RETS>
 	   <REData>
 	      <REProperties>

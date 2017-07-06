@@ -1,3 +1,9 @@
+/*
+ * this class listinging covers both freehold and condo properties, 
+ * ideally it should separate as one freehold, one condo and one common
+ */
+
+
 package com.whereq.realtor.xml.bind;
 
 import java.util.Date;
@@ -14,14 +20,14 @@ import com.whereq.util.DateAdapter;
 
 @XmlRootElement(name = "Listing")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class FullResListing {
+public class FullListing {
 	private Integer id;
 
+	
+	//common attributes shared between freehold and condo
 	@XmlElement(name = "AirConditioning")
 	private String airConditioning;
 
-	@XmlElement(name = "Acreage")
-	private String acreage;
 
 	@XmlElement(name = "RemarksForClients")
 	private String remarksForClients;
@@ -32,8 +38,7 @@ public class FullResListing {
 	@XmlElement(name = "AptUnit")
 	private String aptUnit;
 	
-	@XmlElement(name = "Balcony")
-	private String balcony;
+
 	@XmlElement(name = "Washrooms" )
 	private int washrooms;
 
@@ -49,39 +54,14 @@ public class FullResListing {
 	@XmlElement(name = "Basement2")
 	private String basement2;
 	
-	@XmlElement(name = "BuildingInsuranceIncluded" )
-	private String buildingInsuranceIncluded;
-	
-	@XmlElement(name = "BuildingAmenities1" )
-	private String buildingAmenities1;
-	
-	@XmlElement(name = "BuildingAmenities2" )
-	private String buildingAmenities2;
-	
 
-	@XmlElement(name = "BuildingAmenities3" )
-	private String buildingAmenities3;
-	
-	@XmlElement(name = "BuildingAmenities4" )
-	private String buildingAmenities4;
-	
-	@XmlElement(name = "BuildingAmenities5" )
-	private String buildingAmenities5;
-
-	@XmlElement(name = "BuildingAmenities6" )
-	private String buildingAmenities6;
-	
 	@XmlElement(name = "CableTVIncluded")
 	private String cableTVIncluded;
 	
 	@XmlElement(name = "CacIncluded")
 	private String cacIncluded;
 	
-	@XmlElement(name = "CommonElementsIncluded")
-	private String commonElementsIncluded;
-	
-	@XmlElement(name = "FrontingOnNSEW")
-	private String fontingOnNSEW;
+
 	
 	@XmlElement(name = "Province")
 	private String province;
@@ -92,9 +72,7 @@ public class FullResListing {
 	@XmlElement(name = "FamilyRoom")
 	private String familyRoom;
 	
-	@XmlElement(name = "LotDepth")
-	private double lotDepth;
-	
+
 	@XmlElement(name = "Drive")
 	private String drive;
 	
@@ -107,14 +85,10 @@ public class FullResListing {
 	@XmlElement(name = "Extras")
 	private String extras;
 	
-	@XmlElement(name = "FarmAgriculture")
-	private String farmAgriculture;
-	
 	@XmlElement(name = "FireplaceStove")
 	private String fireplaceStove;
 	
-	@XmlElement(name = "LotFront")
-	private double lotFront;
+
 	
 	@XmlElement(name = "HeatSource")
 	private String heatSource;
@@ -133,9 +107,6 @@ public class FullResListing {
 	
 	@XmlElement(name = "HydroIncluded")
 	private String hydroIncluded;
-	
-	@XmlElement(name = "LotIrregularities")
-	private String lotIrregularities;
 	
 	@XmlElement(name = "LegalDescription")
 	private String legalDescription;
@@ -176,8 +147,7 @@ public class FullResListing {
 	@XmlElement(name = "Level12")
 	private String level_12;	
 	
-	@XmlElement(name = "LotSizeCode")
-	private String lotSizeCode;
+
 	
 	@XmlElement(name = "ListPrice", type = Double.class)
 	private double listPrice;
@@ -616,12 +586,66 @@ public class FullResListing {
 	@XmlJavaTypeAdapter(DateAdapter.class)
 	private Date pixUpdatedDate;
 	
+
+	
+	
+	//freehold residential specific attributes
+	@XmlElement(name = "Acreage")
+	private String acreage;
+
+	@XmlElement(name = "FrontingOnNSEW")
+	private String fontingOnNSEW;
+
+	@XmlElement(name = "LotDepth")
+	private double lotDepth;
+	
+	@XmlElement(name = "LotFront")
+	private double lotFront;
+	
+	@XmlElement(name = "LotIrregularities")
+	private String lotIrregularities;
+
+	@XmlElement(name = "FarmAgriculture")
+	private String farmAgriculture;
+	
+	@XmlElement(name = "LotSizeCode")
+	private String lotSizeCode;
+	
+	
 	
 	
 	//Condo Specific attributes
 	@XmlElement(name = "SharesPer")
 	private String sharesPer;
 	
+	@XmlElement(name = "Balcony")
+	private String balcony;
+	
+	@XmlElement(name = "BuildingInsuranceIncluded" )
+	private String buildingInsuranceIncluded;
+	
+	@XmlElement(name = "BuildingAmenities1" )
+	private String buildingAmenities1;
+	
+	@XmlElement(name = "BuildingAmenities2" )
+	private String buildingAmenities2;
+	
+
+	@XmlElement(name = "BuildingAmenities3" )
+	private String buildingAmenities3;
+	
+	@XmlElement(name = "BuildingAmenities4" )
+	private String buildingAmenities4;
+	
+	@XmlElement(name = "BuildingAmenities5" )
+	private String buildingAmenities5;
+
+	@XmlElement(name = "BuildingAmenities6" )
+	private String buildingAmenities6;
+	
+	@XmlElement(name = "CommonElementsIncluded")
+	private String commonElementsIncluded;
+
 	@XmlElement(name = "CondoCorp")
 	private int condoCorp;
 	

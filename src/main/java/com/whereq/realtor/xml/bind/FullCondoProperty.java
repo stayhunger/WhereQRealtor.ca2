@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class FullCondoProperty 
 {
 	@XmlElement(name = "Listing")
-	private FullResListing listing ;
+	private FullListing listing ;
 
-	public void setListing(FullResListing listing) {
+	public void setListing(FullListing listing) {
 		this.listing = listing;
 	}
 
@@ -20,7 +20,7 @@ public class FullCondoProperty
 	
 	//no need for getter as it implement by default
 	
-    public FullResListing getListing() {
+    public FullListing getListing() {
 		return listing;
 	}
 
