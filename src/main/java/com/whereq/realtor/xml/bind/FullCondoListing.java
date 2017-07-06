@@ -11,17 +11,19 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import com.whereq.util.DateAdapter;
 
 
-
 @XmlRootElement(name = "Listing")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class FullResListing {
+public class FullCondoListing {
 	private Integer id;
 
-	@XmlElement(name = "AirConditioning")
-	private String airConditioning;
+	@XmlElement(name = "SharesPer")
+	private String sharesPer;
 
 	@XmlElement(name = "Acreage")
 	private String acreage;
+	
+	@XmlElement(name = "AirConditioning")
+	private String airConditioning;
 
 	@XmlElement(name = "RemarksForClients")
 	private String remarksForClients;
@@ -31,9 +33,10 @@ public class FullResListing {
 
 	@XmlElement(name = "AptUnit")
 	private String aptUnit;
-	
+
 	@XmlElement(name = "Balcony")
 	private String balcony;
+
 	@XmlElement(name = "Washrooms" )
 	private int washrooms;
 
@@ -41,35 +44,35 @@ public class FullResListing {
 	private int bedrooms;
 	
 	@XmlElement(name = "BedroomsPlus" )
-	private int bedroomPlus;
+	private int bedroomsPlus;
+
+	@XmlElement(name = "BuildingInsuranceIncluded" )
+	private int buildingInsuranceIncluded;
 	
+	@XmlElement(name = "BuildingAmenities1" )
+	private int buildingAmenities1;
+	
+	@XmlElement(name = "BuildingAmenities2" )
+	private int buildingAmenities2;
+	
+
+	@XmlElement(name = "BuildingAmenities3" )
+	private int buildingAmenities3;
+	
+	@XmlElement(name = "BuildingAmenities4" )
+	private int buildingAmenities4;
+	
+	@XmlElement(name = "BuildingAmenities5" )
+	private int buildingAmenities5;
+
+	@XmlElement(name = "BuildingAmenities6" )
+	private int buildingAmenities6;
+
 	@XmlElement(name = "Basement1")
 	private String basement1;
 	
 	@XmlElement(name = "Basement2")
 	private String basement2;
-	
-	@XmlElement(name = "BuildingInsuranceIncluded" )
-	private String buildingInsuranceIncluded;
-	
-	@XmlElement(name = "BuildingAmenities1" )
-	private String buildingAmenities1;
-	
-	@XmlElement(name = "BuildingAmenities2" )
-	private String buildingAmenities2;
-	
-
-	@XmlElement(name = "BuildingAmenities3" )
-	private String buildingAmenities3;
-	
-	@XmlElement(name = "BuildingAmenities4" )
-	private String buildingAmenities4;
-	
-	@XmlElement(name = "BuildingAmenities5" )
-	private String buildingAmenities5;
-
-	@XmlElement(name = "BuildingAmenities6" )
-	private String buildingAmenities6;
 	
 	@XmlElement(name = "CableTVIncluded")
 	private String cableTVIncluded;
@@ -80,17 +83,13 @@ public class FullResListing {
 	@XmlElement(name = "CommonElementsIncluded")
 	private String commonElementsIncluded;
 	
+	
 	@XmlElement(name = "FrontingOnNSEW")
 	private String fontingOnNSEW;
 	
+	
 	@XmlElement(name = "Province")
 	private String province;
-	
-	@XmlElement(name = "DirectionsCrossStreets")
-	private String directionsCrossStreets;
-	
-	@XmlElement(name = "FamilyRoom")
-	private String familyRoom;
 	
 	@XmlElement(name = "LotDepth")
 	private double lotDepth;
@@ -116,14 +115,36 @@ public class FullResListing {
 	@XmlElement(name = "LotFront")
 	private double lotFront;
 	
+	
+	@XmlElement(name = "UtilitiesGas")
+	private String utilitiesGas;
+	
+	
+	@XmlElement(name = "LotIrregularities")
+	private String lotIrregularities;
+	
+	
+	@XmlElement(name = "DirectionsCrossStreets")
+	private String directionsCrossStreets;
+	
+	@XmlElement(name = "FamilyRoom")
+	private String familyRoom;
+	
+	
+	@XmlElement(name = "EnsuiteLaundry")
+	private String ensuiteLaundry;
+	
+	@XmlElement(name = "Exposure")
+	private String exposure;
+	
+	
 	@XmlElement(name = "HeatSource")
 	private String heatSource;
 	
 	@XmlElement(name = "GarageType")
 	private String garageType;
 	
-	@XmlElement(name = "UtilitiesGas")
-	private String utilitiesGas;
+
 	
 	@XmlElement(name = "HeatIncluded")
 	private String heatIncluded;
@@ -134,8 +155,7 @@ public class FullResListing {
 	@XmlElement(name = "HydroIncluded")
 	private String hydroIncluded;
 	
-	@XmlElement(name = "LotIrregularities")
-	private String lotIrregularities;
+
 	
 	@XmlElement(name = "LegalDescription")
 	private String legalDescription;
@@ -176,12 +196,28 @@ public class FullResListing {
 	@XmlElement(name = "Level12")
 	private String level_12;	
 	
+	
 	@XmlElement(name = "LotSizeCode")
 	private String lotSizeCode;
 	
-	@XmlElement(name = "ListPrice", type = Double.class)
-	private double listPrice;
+	@XmlElement(name = "ListPrice", type = Float.class)
+	private float listPrice;
 	
+	@XmlElement(name = "Locker")
+	private String locker;
+	
+	@XmlElement(name = "LockerNum")
+	private int lockerNum;	
+	
+	@XmlElement(name = "LockerLevel")
+	private String lockerLevel;
+
+	@XmlElement(name = "LockerUnit")
+	private String lockerUnit;
+
+	@XmlElement(name = "Maintenance", type = Float.class)
+	private float maintenance;
+
 	@XmlElement(name = "MLS")
 	private String mls;
 	
@@ -200,11 +236,34 @@ public class FullResListing {
 	@XmlElement(name = "ParkingSpaces" )
 	private int parkingSpaces;
 	
-	@XmlElement(name = "Pool")
-	private String pool;
+	@XmlElement(name = "ParkingSpot1" )
+	private int parkingSpot1;
 	
+	@XmlElement(name = "ParkingSpot2" )
+	private int parkingSpot2;
+	
+	@XmlElement(name = "ParkingType")
+	private String parkingType;
+	
+	@XmlElement(name = "ParkingType2")
+	private String parkingType2;
+	
+	@XmlElement(name = "ParkingDrive")
+	private String parkingDrive;	
+	
+	@XmlElement(name = "PetsPermitted")
+	private String petsPermitted;
+	
+
 	@XmlElement(name = "ParkingIncluded" )
 	private String parckingIncluded;
+
+	@XmlElement(name = "ParkingLegalDescription" )
+	private String parkingLegalDescription;
+	
+	@XmlElement(name = "ParkingLegalDescription2" )
+	private String parkingLegalDescription2;
+	
 	
 	@XmlElement(name = "ListBrokerage")
 	private String listBrokerage;
@@ -374,8 +433,29 @@ public class FullResListing {
 	@XmlElement(name = "SaleLease")
 	private String saleLease;
 	
-	@XmlElement(name = "Sewers")
-	private String sewers;
+	@XmlElement(name = "ShorelineAllowance")
+	private String ShorelineAllowance;
+	
+	@XmlElement(name = "ShorelineExposure")
+	private String ShorelineExposure;
+	
+	@XmlElement(name = "SpecialDesignation1")
+	private String specialDesignation1;
+	
+	@XmlElement(name = "SpecialDesignation2")
+	private String specialDesignation2;
+	
+	@XmlElement(name = "SpecialDesignation3")
+	private String specialDesignation3;
+	
+	@XmlElement(name = "SpecialDesignation4")
+	private String specialDesignation4;
+	
+	@XmlElement(name = "SpecialDesignation5")
+	private String specialDesignation5;
+	
+	@XmlElement(name = "SellerPropertyInfoStatement")
+	private String sellerPropertyInfoStatement;
 	
 	@XmlElement(name = "ApproxSquareFootage")
 	private String approxSquareFootage;
@@ -410,20 +490,24 @@ public class FullResListing {
 	@XmlElement(name = "Uffi")
 	private String uffi;
 	
-	@XmlElement(name = "UtilitiesCable" )
-	private String utilitiesCable;
-	
-	@XmlElement(name = "UtilitiesTelephone" )
-	private String utilitiesTelephone;
-	
-	@XmlElement(name = "SellerPropertyInfoStatement")
-	private String sellerPropertyInfoStatement;
+	@XmlElement(name = "Unit")
+	private String unit;
 	
 	@XmlElement(name = "Water")
 	private String water;
 	
 	@XmlElement(name = "WaterIncluded" )
 	private String waterIncluded;
+	
+	
+	@XmlElement(name = "WaterBodyName")
+	private String waterBodyName;
+	
+	@XmlElement(name = "WaterBodyType" )
+	private String waterBodyType;
+	
+	@XmlElement(name = "WaterFrontage" )
+	private String waterFrontage;
 	
 	@XmlElement(name = "WashroomsType1")
 	private int washroomsType1;
@@ -466,6 +550,9 @@ public class FullResListing {
 	@XmlElement(name = "TaxYear" )
 	private int taxYear;
 	
+	@XmlElement(name = "TotalParkingSpaces")
+	private String totalParkingSpaces;
+	
 	@XmlElement(name = "ApproxAge")
 	private String approxAge;
 	
@@ -492,12 +579,6 @@ public class FullResListing {
 	
 	@XmlElement(name = "PropertyFeatures2")
 	private String propertyFeatures2;
-	
-	@XmlElement(name = "OtherStructures1")
-	private String otherStructures1;
-	
-	@XmlElement(name = "OtherStructures2")
-	private String otherStructures2;
 	
 	@XmlElement(name = "AssessmentYear" )
 	private int assessmentYear;
@@ -565,21 +646,6 @@ public class FullResListing {
 	@XmlElement(name = "Waterfront")
 	private String waterfront;
 	
-	@XmlElement(name = "SpecialDesignation1")
-	private String specialDesignation1;
-	
-	@XmlElement(name = "SpecialDesignation2")
-	private String specialDesignation2;
-	
-	@XmlElement(name = "SpecialDesignation3")
-	private String specialDesignation3;
-	
-	@XmlElement(name = "SpecialDesignation4")
-	private String specialDesignation4;
-	
-	@XmlElement(name = "SpecialDesignation5")
-	private String specialDesignation5;
-	
 	@XmlElement(name = "SpecialDesignation6")
 	private String specialDesignation6;
 	
@@ -595,6 +661,15 @@ public class FullResListing {
 	
 	@XmlElement(name = "CommunityCode")
 	private String communityCode;
+
+	@XmlElement(name = "CondoCorp")
+	private String condoCorp;
+	
+	@XmlElement(name = "CondoRegistryOffice")
+	private String condoRegistryOffice;
+	
+	@XmlElement(name = "CondoTaxesIncluded")
+	private String condoTaxesIncluded;
 	
 	@XmlElement(name = "MunicipalityDistrict")
 	private String municipalityDistrict;
@@ -615,77 +690,7 @@ public class FullResListing {
 	@XmlElement(name = "PixUpdtedDt")
 	@XmlJavaTypeAdapter(DateAdapter.class)
 	private Date pixUpdatedDate;
-	
-	
-	
-	//Condo Specific attributes
-	@XmlElement(name = "SharesPer")
-	private String sharesPer;
-	
-	@XmlElement(name = "CondoCorp")
-	private int condoCorp;
-	
-	@XmlElement(name = "CondoRegistryOffice")
-	private String condoRegistryOffice;
-	
-	@XmlElement(name = "CondoTaxesIncluded")
-	private String condoTaxesIncluded;
-	
-	@XmlElement(name = "EnsuiteLaundry")
-	private String ensuiteLaundry;
-	
-	@XmlElement(name = "Exposure")
-	private String exposure;
-	
-	@XmlElement(name = "Locker")
-	private String locker;
-	
-	@XmlElement(name = "LockerNum")
-	private int lockerNum;	
-	
-	@XmlElement(name = "LockerLevel")
-	private String lockerLevel;
 
-	@XmlElement(name = "LockerUnit")
-	private String lockerUnit;
-
-	@XmlElement(name = "ParkingLegalDescription" )
-	private String parkingLegalDescription;
-	
-	@XmlElement(name = "ParkingLegalDescription2" )
-	private String parkingLegalDescription2;
-	
-	@XmlElement(name = "ParkingSpot1" )
-	private int parkingSpot1;
-	
-	@XmlElement(name = "ParkingSpot2" )
-	private int parkingSpot2;
-	
-	@XmlElement(name = "ParkingType")
-	private String parkingType;
-	
-	@XmlElement(name = "ParkingType2")
-	private String parkingType2;
-	
-	@XmlElement(name = "ParkingDrive")
-	private String parkingDrive;	
-	
-	@XmlElement(name = "ShorelineAllowance")
-	private String ShorelineAllowance;
-	
-	@XmlElement(name = "ShorelineExposure")
-	private String ShorelineExposure;
-	
-	@XmlElement(name = "WaterBodyName")
-	private String waterBodyName;
-	
-	@XmlElement(name = "WaterBodyType" )
-	private String waterBodyType;
-	
-	@XmlElement(name = "WaterFrontage" )
-	private String waterFrontage;
-	
-	
 	public Integer getId() {
 		return id;
 	}
@@ -702,13 +707,6 @@ public class FullResListing {
 		this.airConditioning = airConditioning;
 	}
 
-	public String getAcreage() {
-		return acreage;
-	}
-
-	public void setAcreage(String acreage) {
-		this.acreage = acreage;
-	}
 
 	public String getRemarksForClients() {
 		return remarksForClients;
@@ -744,7 +742,7 @@ public class FullResListing {
 
 
 	public int getBedroomPlus() {
-		return bedroomPlus;
+		return bedroomsPlus;
 	}
 
 	public int getBedrooms() {
@@ -760,7 +758,7 @@ public class FullResListing {
 	}
 
 	public void setBedroomPlus(int bedroomPlus) {
-		this.bedroomPlus = bedroomPlus;
+		this.bedroomsPlus = bedroomPlus;
 	}
 
 	public String getBasement1() {
@@ -803,13 +801,7 @@ public class FullResListing {
 		this.commonElementsIncluded = commonElementsIncluded;
 	}
 
-	public String getFontingOnNSEW() {
-		return fontingOnNSEW;
-	}
 
-	public void setFontingOnNSEW(String fontingOnNSEW) {
-		this.fontingOnNSEW = fontingOnNSEW;
-	}
 
 	public String getProvince() {
 		return province;
@@ -835,29 +827,6 @@ public class FullResListing {
 		this.familyRoom = familyRoom;
 	}
 
-	public double getLotDepth() {
-		return lotDepth;
-	}
-
-	public void setLotDepth(double lotDepth) {
-		this.lotDepth = lotDepth;
-	}
-
-	public String getDrive() {
-		return drive;
-	}
-
-	public void setDrive(String drive) {
-		this.drive = drive;
-	}
-
-	public String getUtilitiesHydro() {
-		return utilitiesHydro;
-	}
-
-	public void setUtilitiesHydro(String utilitiesHydro) {
-		this.utilitiesHydro = utilitiesHydro;
-	}
 
 	public String getElevator() {
 		return elevator;
@@ -875,13 +844,7 @@ public class FullResListing {
 		this.extras = extras;
 	}
 
-	public String getFarmAgriculture() {
-		return farmAgriculture;
-	}
 
-	public void setFarmAgriculture(String farmAgriculture) {
-		this.farmAgriculture = farmAgriculture;
-	}
 
 	public String getFireplaceStove() {
 		return fireplaceStove;
@@ -891,13 +854,7 @@ public class FullResListing {
 		this.fireplaceStove = fireplaceStove;
 	}
 
-	public double getLotFront() {
-		return lotFront;
-	}
 
-	public void setLotFront(double lotFront) {
-		this.lotFront = lotFront;
-	}
 
 	public String getHeatSource() {
 		return heatSource;
@@ -915,13 +872,7 @@ public class FullResListing {
 		this.garageType = garageType;
 	}
 
-	public String getUtilitiesGas() {
-		return utilitiesGas;
-	}
 
-	public void setUtilitiesGas(String utilitiesGas) {
-		this.utilitiesGas = utilitiesGas;
-	}
 
 	public String getHeatIncluded() {
 		return heatIncluded;
@@ -947,13 +898,6 @@ public class FullResListing {
 		this.hydroIncluded = hydroIncluded;
 	}
 
-	public String getLotIrregularities() {
-		return lotIrregularities;
-	}
-
-	public void setLotIrregularities(String lotIrregularities) {
-		this.lotIrregularities = lotIrregularities;
-	}
 
 	public String getLegalDescription() {
 		return legalDescription;
@@ -1059,19 +1003,13 @@ public class FullResListing {
 		this.level_12 = level_12;
 	}
 
-	public String getLotSizeCode() {
-		return lotSizeCode;
-	}
 
-	public void setLotSizeCode(String lotSizeCode) {
-		this.lotSizeCode = lotSizeCode;
-	}
 
-	public double getListPrice() {
+	public float getListPrice() {
 		return listPrice;
 	}
 
-	public void setListPrice(double listPrice) {
+	public void setListPrice(float listPrice) {
 		this.listPrice = listPrice;
 	}
 
@@ -1123,13 +1061,6 @@ public class FullResListing {
 		this.parkingSpaces = parkingSpaces;
 	}
 
-	public String getPool() {
-		return pool;
-	}
-
-	public void setPool(String pool) {
-		this.pool = pool;
-	}
 
 	public String getParckingIncluded() {
 		return parckingIncluded;
@@ -1739,13 +1670,7 @@ public class FullResListing {
 		this.saleLease = saleLease;
 	}
 
-	public String getSewers() {
-		return sewers;
-	}
 
-	public void setSewers(String sewers) {
-		this.sewers = sewers;
-	}
 
 	public String getApproxSquareFootage() {
 		return approxSquareFootage;
@@ -1835,29 +1760,8 @@ public class FullResListing {
 		this.uffi = uffi;
 	}
 
-	public String getUtilitiesCable() {
-		return utilitiesCable;
-	}
 
-	public void setUtilitiesCable(String utilitiesCable) {
-		this.utilitiesCable = utilitiesCable;
-	}
 
-	public String getUtilitiesTelephone() {
-		return utilitiesTelephone;
-	}
-
-	public void setUtilitiesTelephone(String utilitiesTelephone) {
-		this.utilitiesTelephone = utilitiesTelephone;
-	}
-
-	public String getSellerPropertyInfoStatement() {
-		return sellerPropertyInfoStatement;
-	}
-
-	public void setSellerPropertyInfoStatement(String sellerPropertyInfoStatement) {
-		this.sellerPropertyInfoStatement = sellerPropertyInfoStatement;
-	}
 
 	public String getWater() {
 		return water;
@@ -2085,21 +1989,7 @@ public class FullResListing {
 		this.propertyFeatures2 = propertyFeatures2;
 	}
 
-	public String getOtherStructures1() {
-		return otherStructures1;
-	}
 
-	public void setOtherStructures1(String otherStructures1) {
-		this.otherStructures1 = otherStructures1;
-	}
-
-	public String getOtherStructures2() {
-		return otherStructures2;
-	}
-
-	public void setOtherStructures2(String otherStructures2) {
-		this.otherStructures2 = otherStructures2;
-	}
 
 	public int getAssessmentYear() {
 		return assessmentYear;
@@ -2417,78 +2307,11 @@ public class FullResListing {
 	public void setTaxes(double taxes) {
 		this.taxes = taxes;
 	}
-	
-	//Condo specific attributes
-	
+
 	
 	
 	
-    public String getBalcony() {
-		return balcony;
-	}
-
-	public void setBalcony(String balcony) {
-		this.balcony = balcony;
-	}
-
-
-	public String getBuildingInsuranceIncluded() {
-		return buildingInsuranceIncluded;
-	}
-
-	public void setBuildingInsuranceIncluded(String buildingInsuranceIncluded) {
-		this.buildingInsuranceIncluded = buildingInsuranceIncluded;
-	}
-
-	public String getBuildingAmenities1() {
-		return buildingAmenities1;
-	}
-
-	public void setBuildingAmenities1(String buildingAmenities1) {
-		this.buildingAmenities1 = buildingAmenities1;
-	}
-
-	public String getBuildingAmenities2() {
-		return buildingAmenities2;
-	}
-
-	public void setBuildingAmenities2(String buildingAmenities2) {
-		this.buildingAmenities2 = buildingAmenities2;
-	}
-
-	public String getBuildingAmenities3() {
-		return buildingAmenities3;
-	}
-
-	public void setBuildingAmenities3(String buildingAmenities3) {
-		this.buildingAmenities3 = buildingAmenities3;
-	}
-
-	public String getBuildingAmenities4() {
-		return buildingAmenities4;
-	}
-
-	public void setBuildingAmenities4(String buildingAmenities4) {
-		this.buildingAmenities4 = buildingAmenities4;
-	}
-
-	public String getBuildingAmenities5() {
-		return buildingAmenities5;
-	}
-
-	public void setBuildingAmenities5(String buildingAmenities5) {
-		this.buildingAmenities5 = buildingAmenities5;
-	}
-
-	public String getBuildingAmenities6() {
-		return buildingAmenities6;
-	}
-
-	public void setBuildingAmenities6(String buildingAmenities6) {
-		this.buildingAmenities6 = buildingAmenities6;
-	}
-
-	public String getSharesPer() {
+    public String getSharesPer() {
 		return sharesPer;
 	}
 
@@ -2496,28 +2319,76 @@ public class FullResListing {
 		this.sharesPer = sharesPer;
 	}
 
-	public int getCondoCorp() {
-		return condoCorp;
+	public String getBalcony() {
+		return balcony;
 	}
 
-	public void setCondoCorp(int condoCorp) {
-		this.condoCorp = condoCorp;
+	public void setBalcony(String balcony) {
+		this.balcony = balcony;
 	}
 
-	public String getCondoRegistryOffice() {
-		return condoRegistryOffice;
+	public int getBedroomsPlus() {
+		return bedroomsPlus;
 	}
 
-	public void setCondoRegistryOffice(String condoRegistryOffice) {
-		this.condoRegistryOffice = condoRegistryOffice;
+	public void setBedroomsPlus(int bedroomsPlus) {
+		this.bedroomsPlus = bedroomsPlus;
 	}
 
-	public String getCondoTaxesIncluded() {
-		return condoTaxesIncluded;
+	public int getBuildingInsuranceIncluded() {
+		return buildingInsuranceIncluded;
 	}
 
-	public void setCondoTaxesIncluded(String condoTaxesIncluded) {
-		this.condoTaxesIncluded = condoTaxesIncluded;
+	public void setBuildingInsuranceIncluded(int buildingInsuranceIncluded) {
+		this.buildingInsuranceIncluded = buildingInsuranceIncluded;
+	}
+
+	public int getBuildingAmenities1() {
+		return buildingAmenities1;
+	}
+
+	public void setBuildingAmenities1(int buildingAmenities1) {
+		this.buildingAmenities1 = buildingAmenities1;
+	}
+
+	public int getBuildingAmenities2() {
+		return buildingAmenities2;
+	}
+
+	public void setBuildingAmenities2(int buildingAmenities2) {
+		this.buildingAmenities2 = buildingAmenities2;
+	}
+
+	public int getBuildingAmenities3() {
+		return buildingAmenities3;
+	}
+
+	public void setBuildingAmenities3(int buildingAmenities3) {
+		this.buildingAmenities3 = buildingAmenities3;
+	}
+
+	public int getBuildingAmenities4() {
+		return buildingAmenities4;
+	}
+
+	public void setBuildingAmenities4(int buildingAmenities4) {
+		this.buildingAmenities4 = buildingAmenities4;
+	}
+
+	public int getBuildingAmenities5() {
+		return buildingAmenities5;
+	}
+
+	public void setBuildingAmenities5(int buildingAmenities5) {
+		this.buildingAmenities5 = buildingAmenities5;
+	}
+
+	public int getBuildingAmenities6() {
+		return buildingAmenities6;
+	}
+
+	public void setBuildingAmenities6(int buildingAmenities6) {
+		this.buildingAmenities6 = buildingAmenities6;
 	}
 
 	public String getEnsuiteLaundry() {
@@ -2568,20 +2439,12 @@ public class FullResListing {
 		this.lockerUnit = lockerUnit;
 	}
 
-	public String getParkingLegalDescription() {
-		return parkingLegalDescription;
+	public float getMaintenance() {
+		return maintenance;
 	}
 
-	public void setParkingLegalDescription(String parkingLegalDescription) {
-		this.parkingLegalDescription = parkingLegalDescription;
-	}
-
-	public String getParkingLegalDescription2() {
-		return parkingLegalDescription2;
-	}
-
-	public void setParkingLegalDescription2(String parkingLegalDescription2) {
-		this.parkingLegalDescription2 = parkingLegalDescription2;
+	public void setMaintenance(float maintenance) {
+		this.maintenance = maintenance;
 	}
 
 	public int getParkingSpot1() {
@@ -2624,6 +2487,30 @@ public class FullResListing {
 		this.parkingDrive = parkingDrive;
 	}
 
+	public String getPetsPermitted() {
+		return petsPermitted;
+	}
+
+	public void setPetsPermitted(String petsPermitted) {
+		this.petsPermitted = petsPermitted;
+	}
+
+	public String getParkingLegalDescription() {
+		return parkingLegalDescription;
+	}
+
+	public void setParkingLegalDescription(String parkingLegalDescription) {
+		this.parkingLegalDescription = parkingLegalDescription;
+	}
+
+	public String getParkingLegalDescription2() {
+		return parkingLegalDescription2;
+	}
+
+	public void setParkingLegalDescription2(String parkingLegalDescription2) {
+		this.parkingLegalDescription2 = parkingLegalDescription2;
+	}
+
 	public String getShorelineAllowance() {
 		return ShorelineAllowance;
 	}
@@ -2638,6 +2525,14 @@ public class FullResListing {
 
 	public void setShorelineExposure(String shorelineExposure) {
 		ShorelineExposure = shorelineExposure;
+	}
+
+	public String getUnit() {
+		return unit;
+	}
+
+	public void setUnit(String unit) {
+		this.unit = unit;
 	}
 
 	public String getWaterBodyName() {
@@ -2664,11 +2559,41 @@ public class FullResListing {
 		this.waterFrontage = waterFrontage;
 	}
 
+	public String getTotalParkingSpaces() {
+		return totalParkingSpaces;
+	}
 
+	public void setTotalParkingSpaces(String totalParkingSpaces) {
+		this.totalParkingSpaces = totalParkingSpaces;
+	}
+
+	public String getCondoCorp() {
+		return condoCorp;
+	}
+
+	public void setCondoCorp(String condoCorp) {
+		this.condoCorp = condoCorp;
+	}
+
+	public String getCondoRegistryOffice() {
+		return condoRegistryOffice;
+	}
+
+	public void setCondoRegistryOffice(String condoRegistryOffice) {
+		this.condoRegistryOffice = condoRegistryOffice;
+	}
+
+	public String getCondoTaxesIncluded() {
+		return condoTaxesIncluded;
+	}
+
+	public void setCondoTaxesIncluded(String condoTaxesIncluded) {
+		this.condoTaxesIncluded = condoTaxesIncluded;
+	}
 
 	@Override
     public String toString() {
-        return "Listing: [MLS=" + mls + ", Address = " + address + ", listprice=" + listPrice + "]";
+        return "Listing: [MLS=" + mls + ", Address = " + address + ", listprice=" + listPrice + ", TypeOwn1Out=" + typeOwn1out + "]";
     }
 	
 	

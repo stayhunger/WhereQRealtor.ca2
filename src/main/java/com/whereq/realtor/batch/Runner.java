@@ -20,19 +20,22 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
+import com.whereq.realtor.batch.domain.CondoExtraPO;
 import com.whereq.realtor.batch.domain.FH_ListingAddrPO;
 import com.whereq.realtor.batch.domain.FH_ListingExtraPO;
 import com.whereq.realtor.batch.domain.FH_PropertyDetailsPO;
 import com.whereq.realtor.batch.domain.FH_PropertyPO;
 import com.whereq.realtor.batch.domain.FH_PropertyRoomsPO;
 import com.whereq.realtor.batch.domain.ListingFullPO;
-import com.whereq.realtor.batch.domain.ListingActivePO;
 import com.whereq.realtor.batch.repository.AddressRepository;
+import com.whereq.realtor.batch.repository.CondoExtraRepository;
 import com.whereq.realtor.batch.repository.FHPropertyDetailsRepository;
 import com.whereq.realtor.batch.repository.FHPropertyRepository;
 import com.whereq.realtor.batch.repository.FHPropertyRoomsRepository;
 import com.whereq.realtor.batch.repository.ListingExtraRepository;
 import com.whereq.realtor.batch.repository.ListingRepository;
+import com.whereq.realtor.xml.bind.FullCondoProperty;
+import com.whereq.realtor.xml.bind.FullCondoPropertyWrapper;
 import com.whereq.realtor.xml.bind.FullResListing;
 import com.whereq.realtor.xml.bind.FullResidentialProperty;
 import com.whereq.realtor.xml.bind.FullResidentialPropertyWrapper;
@@ -58,6 +61,9 @@ public class Runner {
 	@Inject
 	private FHPropertyRoomsRepository pptRooms_repository;
 	
+	@Inject
+	private CondoExtraRepository cndExtra_repository;
+	
     @Resource
     private Environment env;
 	
@@ -78,7 +84,10 @@ public class Runner {
 
 		List<FH_PropertyRoomsPO> ppyRoomList = Lists.newArrayList();
 		
-		System.out.println("============================================================");
+		List<CondoExtraPO> cndExtrList = Lists.newArrayList();
+		
+		
+		System.out.println("2. FREEHOLD ============================================================");
 		System.out.println("Start: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
 		
         JAXBContext jc = JAXBContext.newInstance(FullResidentialPropertyWrapper.class);
@@ -87,8 +96,8 @@ public class Runner {
         XMLInputFactory xif = XMLInputFactory.newFactory();
         String xmlpath = env.getProperty("FULL_RES_PATH");
         System.out.println("env: " + xmlpath);
-        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
-        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_residential.xml"));
+        //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_residential.xml"));
 
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
@@ -105,7 +114,7 @@ public class Runner {
 				if (exist == null)
 				{
 					i++;
-					poList.add(saveIntoListingTable(listFromXml)) ;
+					poList.add(saveIntoListingTable(listFromXml, "RES")) ;
 					addList.add(saveIntoAddressTable(listFromXml));
 					extraList.add(saveIntoExtraTable(listFromXml));
 					ppyList.add(saveIntoPropertyTable(listFromXml));
@@ -115,8 +124,8 @@ public class Runner {
 				}
 				else
 				{
-					System.out.println("MLS#: " + mls + " existing alreay, check to see if pc changed ...." );
-					System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
+					//System.out.println("MLS#: " + mls + " existing alreay, check to see if pc changed ...." );
+					//System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
 					if (exist.getListPrice() != listFromXml.getListPrice()) 
 					{
 						exist.setNewListPrice(listFromXml.getListPrice());
@@ -131,6 +140,64 @@ public class Runner {
 			}	
 		}
 		
+		
+		System.out.println("3. CONDO============================================================");
+		System.out.println("Start: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
+		
+        jc = JAXBContext.newInstance(FullCondoPropertyWrapper.class);
+        System.out.println("jaxbContent class: " + jc.getClass());
+
+        xif = XMLInputFactory.newFactory();
+        xmlpath = env.getProperty("FULL_CND_PATH");
+        System.out.println("env: " + xmlpath);
+        //XMLStreamReader xsr3 = xif3.createXMLStreamReader(new StreamSource(xmlpath));
+        xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_condo.xml"));
+
+
+        unmarshaller = jc.createUnmarshaller();
+        FullCondoPropertyWrapper  rets3 = (FullCondoPropertyWrapper) unmarshaller.unmarshal(xsr );
+        
+        int x = 0;
+        int y = 0;
+        int pc2 = 0;
+		for (FullCondoProperty condoProperty : rets3.getFullCndProperties()) {
+			{
+				FullResListing listFromXml = condoProperty.getListing();
+				String mls = listFromXml.getMls(); 
+				ListingFullPO exist = repository.findByMLS(mls);
+				if (exist == null)
+				{
+					x++;
+					poList.add(saveIntoListingTable(listFromXml,"CND")) ;
+					addList.add(saveIntoAddressTable(listFromXml));
+					extraList.add(saveIntoExtraTable(listFromXml));
+					ppyList.add(saveIntoPropertyTable(listFromXml));
+					ppyDetailsList.add(saveIntoPropertyDetailsTable(listFromXml));
+					ppyRoomList.add(saveIntoPropertyRoomsTable(listFromXml));
+					cndExtrList.add(saveIntoCondoExtraTable(listFromXml));
+					
+				}
+				else
+				{
+					System.out.println("MLS# on condo: " + mls + " existing alreay, check to see if pc changed ...." );
+					System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
+					if (exist.getListPrice() != listFromXml.getListPrice()) 
+					{
+						exist.setNewListPrice(listFromXml.getListPrice());
+						exist.setStatus("Pc");
+						repository.save(exist);
+						System.out.println("update mls: " + mls + " to the new price.");
+						pc2++;
+					}
+					y++;
+					
+					//cndExtrList.add(saveIntoCondoExtraTable(listFromXml));
+				}
+
+			}	
+		}
+
+		
 		repository.save(poList);
 		
 		add_repository.save(addList);
@@ -143,8 +210,11 @@ public class Runner {
 		
 		pptRooms_repository.save(ppyRoomList);
 		
+		cndExtra_repository.save(cndExtrList);
 		
-		System.out.println("Total: ["+ i + "] inserted on  fh_listing table, [" + j + "] listings exist in the table already, [" + pc +"] listings changed prices!");
+		
+		System.out.println("RES Total: ["+ i + "] inserted on  fh_listing table, [" + j + "] listings exist in the table already, [" + pc +"] listings changed prices!");
+		System.out.println("CND Total: ["+ x + "] inserted on  fh_listing table, [" + y + "] listings exist in the table already, [" + pc2 +"] listings changed prices!");
 		System.out.println("End: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
 		System.out.println("============================================================");
 
@@ -152,12 +222,12 @@ public class Runner {
 	}
 	
 	
-	private ListingFullPO saveIntoListingTable(FullResListing listingFull)
+	private ListingFullPO saveIntoListingTable(FullResListing listingFull, String type)
 	{
 		ListingFullPO listingPO = null;
 		
 		//fh_listing
-		System.out.println(listingFull.getMls() + " into fr_listing table:");
+		//System.out.println(listingFull.getMls() + " into fr_listing table:");
 		listingPO = new ListingFullPO();
 		listingPO.setMLS(listingFull.getMls());
 		listingPO.setAddress(listingFull.getAddress());
@@ -174,6 +244,7 @@ public class Runner {
 		listingPO.setPixUpdtedDt(listingFull.getPixUpdatedDate());
 		listingPO.setStatus(listingFull.getStatus());
 		listingPO.setListBrokerage(listingFull.getListBrokerage());
+		listingPO.setType(type);
 		
 		return listingPO;
 		
@@ -212,7 +283,7 @@ public class Runner {
 
 		
 		FH_ListingExtraPO extraPO = null;
-		System.out.println(listingFull.getMls() + " into fr_property_extra table:");
+		//System.out.println(listingFull.getMls() + " into fr_property_extra table:");
 
 		//fh extra
 		extraPO = new FH_ListingExtraPO();
@@ -442,5 +513,56 @@ public class Runner {
 		return ppyRoomPO;
 		
 	}
+
 	
+	private CondoExtraPO saveIntoCondoExtraTable(FullResListing listingFull)
+	{
+
+		
+		CondoExtraPO extraPO = null;
+		//System.out.println(listingFull.getMls() + " into condo_extra table:");
+
+		//condo extra
+		extraPO = new CondoExtraPO();
+		extraPO.setMLS(listingFull.getMls());
+		extraPO.setBalcony(listingFull.getBalcony());
+		extraPO.setBuildingAmenities1(listingFull.getBuildingAmenities1());
+		extraPO.setBuildingAmenities2(listingFull.getBuildingAmenities2());
+		extraPO.setBuildingAmenities3(listingFull.getBuildingAmenities3());
+		extraPO.setBuildingAmenities4(listingFull.getBuildingAmenities4());
+		extraPO.setBuildingAmenities5(listingFull.getBuildingAmenities5());
+		extraPO.setBuildingAmenities6(listingFull.getBuildingAmenities6());
+		
+		extraPO.setCondoCorp(listingFull.getCondoCorp());
+		extraPO.setCondoRegistryOffice(listingFull.getCondoRegistryOffice());
+		extraPO.setCondoTaxesIncluded(listingFull.getCondoTaxesIncluded());
+		extraPO.setBuildingInsuranceIncluded(listingFull.getBuildingInsuranceIncluded());
+		
+		extraPO.setEnsuiteLaundry(listingFull.getEnsuiteLaundry());
+		extraPO.setExposure(listingFull.getExposure());
+		extraPO.setExterior1(listingFull.getExterior1());
+		extraPO.setExterior2(listingFull.getExterior2());
+		
+		extraPO.setLocker(listingFull.getLocker());
+		extraPO.setLockerLevel(listingFull.getLockerLevel());
+		extraPO.setLockerNum(listingFull.getLockerNum());
+		extraPO.setLockerUnit(listingFull.getLockerUnit());
+		
+		extraPO.setParkingDrive(listingFull.getParkingDrive());
+		extraPO.setParkingLegalDescription(listingFull.getParkingLegalDescription());
+		extraPO.setParkingLegalDescription2(listingFull.getParkingLegalDescription2());
+		extraPO.setParkingSpot1(listingFull.getParkingSpot1());
+		extraPO.setParkingSpot2(listingFull.getParkingSpot2());
+		extraPO.setParkingType(listingFull.getParkingType());
+		extraPO.setParkingType2(listingFull.getParkingType2());
+		
+		extraPO.setSharesPer(listingFull.getSharesPer());
+		extraPO.setShorelineAllowance(listingFull.getShorelineAllowance());
+		extraPO.setShorelineExposure(listingFull.getShorelineExposure());
+		extraPO.setWaterBodyName(listingFull.getWaterBodyName());
+		extraPO.setWaterBodyType(listingFull.getWaterBodyType());
+		extraPO.setWaterFrontage(listingFull.getWaterFrontage());
+
+		return extraPO	;
+	}
 }
