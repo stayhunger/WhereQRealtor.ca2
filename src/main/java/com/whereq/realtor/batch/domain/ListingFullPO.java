@@ -18,8 +18,8 @@ import org.hibernate.annotations.GenericGenerator;
  *
  */
 @Entity
-//@Table (name = "fh_listing", uniqueConstraints={@UniqueConstraint(columnNames = {"ml_num" })})
-@Table (name = "fh_listing")
+//@Table (name = "listing", uniqueConstraints={@UniqueConstraint(columnNames = {"ml_num" })})
+@Table (name = "listing")
 public class ListingFullPO {
 	
 	/**

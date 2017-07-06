@@ -17,7 +17,8 @@ public class Main {
 		final ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 		try {
 			//active runner to update all active lstings
-			//context.getBean("active_runner",ActiveListingRunner.class).run();
+			System.out.println("--- Version: 1.0 ---");
+			context.getBean("active_runner",ActiveListingRunner.class).run();
 			
 			//to load all freehold listings
 			context.getBean("runner",Runner.class).run();

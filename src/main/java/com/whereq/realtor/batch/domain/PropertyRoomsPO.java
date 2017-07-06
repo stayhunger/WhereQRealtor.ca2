@@ -18,8 +18,8 @@ import org.hibernate.annotations.GenericGenerator;
  *
  */
 @Entity
-@Table (name = "fh_property_rooms")
-public class FH_PropertyRoomsPO {
+@Table (name = "property_rooms")
+public class PropertyRoomsPO {
 	
 	/**
 	 * 
