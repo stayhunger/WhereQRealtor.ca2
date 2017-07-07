@@ -14,7 +14,7 @@ import com.whereq.realtor.batch.domain.ListingActivePO;
 @Component
 public interface ListingActiveRepository extends JpaRepository<ListingActivePO, Long> {
 	
-	@Query("select u from  ListingActivePO u where u.MLS = ?1")
+	@Query("select u from ListingActivePO u where u.MLS = ?1")
 	//@Query(value = "SELECT FROM listing_active WHERE ML_NUM = ?1", nativeQuery = true)
 	ListingActivePO findByMLS(String MLS);
 }

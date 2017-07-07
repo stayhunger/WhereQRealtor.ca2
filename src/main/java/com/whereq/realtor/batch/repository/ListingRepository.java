@@ -24,7 +24,7 @@ public interface ListingRepository extends JpaRepository<ListingFullPO,Long> {
 	ListingFullPO findByMLS(String MLS);
 	
 	
-	@Query(value = "SELECT * FROM fh_listing WHERE zip = ?1", nativeQuery = true)
+	@Query(value = "SELECT * FROM listing WHERE zip = ?1", nativeQuery = true)
 	List<ListingFullPO> findByZipcode(String postalCode);
 	
 	@Modifying
