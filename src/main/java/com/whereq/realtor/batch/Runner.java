@@ -128,10 +128,11 @@ public class Runner {
 					//System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
 					if (exist.getListPrice() != listFromXml.getListPrice()) 
 					{
-						exist.setNewListPrice(listFromXml.getListPrice());
+						exist.setOldListPrice(exist.getOldListPrice()+ "|" + exist.getListPrice() );
+						exist.setListPrice(listFromXml.getListPrice());
 						exist.setStatus("Pc");
 						repository.save(exist);
-						System.out.println("update mls: " + mls + " to the new price.");
+						System.out.println("update mls: " + mls + " to the new price:" + listFromXml.getListPrice());
 						pc++;
 					}
 					j++;
@@ -178,19 +179,19 @@ public class Runner {
 				}
 				else
 				{
-					System.out.println("MLS# on condo: " + mls + " existing alreay, check to see if pc changed ...." );
-					System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
+					//System.out.println("MLS# on condo: " + mls + " existing alreay, check to see if pc changed ...." );
+					//System.out.println("old price: " + exist.getListPrice() + ", new price: " + listFromXml.getListPrice()); 
 					if (exist.getListPrice() != listFromXml.getListPrice()) 
 					{
-						exist.setNewListPrice(listFromXml.getListPrice());
+						exist.setOldListPrice(exist.getOldListPrice()+ "|" + exist.getListPrice() );
+						exist.setListPrice(listFromXml.getListPrice());
 						exist.setStatus("Pc");
 						repository.save(exist);
-						System.out.println("update mls: " + mls + " to the new price.");
+						System.out.println("update mls: " + mls + " to the new price: " + listFromXml.getListPrice());
 						pc2++;
 					}
 					y++;
 					
-					//cndExtrList.add(saveIntoCondoExtraTable(listFromXml));
 				}
 
 			}	
@@ -514,6 +515,8 @@ public class Runner {
 	}
 
 	
+	
+	//to insert condo_extra tables
 	private CondoExtraPO saveIntoCondoExtraTable(FullListing listingFull)
 	{
 

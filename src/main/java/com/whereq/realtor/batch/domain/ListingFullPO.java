@@ -48,8 +48,8 @@ public class ListingFullPO {
 	@Column(name = "lp_dol", columnDefinition="Decimal(11)")
 	private Double ListPrice;
 
-	@Column(name = "lp_dol2", columnDefinition="Decimal(11)")
-	private Double NewListPrice;
+	@Column(name = "lp_dol2")
+	private String OldListPrice;
 	
 
 	@Column(name = "taxes", columnDefinition="Decimal(8,2)")
@@ -252,12 +252,6 @@ public class ListingFullPO {
 
 
 
-	public void setListPrice(Double listPrice) {
-		ListPrice = listPrice;
-	}
-
-
-
 	public long getId() {
 		return id;
 	}
@@ -311,20 +305,22 @@ public class ListingFullPO {
 
 
 
-	public void setListPrice(double listPrice) {
+	public void setListPrice(Double listPrice) {
 		ListPrice = listPrice;
 	}
 
 
-	public Double getNewListPrice() {
-		return NewListPrice;
+
+	public String getOldListPrice() {
+		return OldListPrice;
 	}
 
 
 
-	public void setNewListPrice(Double newListPrice) {
-		NewListPrice = newListPrice;
+	public void setOldListPrice(String oldListPrice) {
+		OldListPrice = oldListPrice;
 	}
+
 
 
 }

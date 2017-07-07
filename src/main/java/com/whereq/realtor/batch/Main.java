@@ -16,7 +16,7 @@ public class Main {
 	public static void main(String[] args) {
 		final ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 		try {
-			//active runner to update all active lstings
+			//active runner to update all active listings
 			System.out.println("--- Version: 1.0 ---");
 			context.getBean("active_runner",ActiveListingRunner.class).run();
 			
