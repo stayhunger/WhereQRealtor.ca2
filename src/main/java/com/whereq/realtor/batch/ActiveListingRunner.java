@@ -35,6 +35,8 @@ import com.whereq.realtor.xml.bind.LiteCondoProperty;
 import com.whereq.realtor.xml.bind.LiteCondoPropertyWrapper;
 import com.whereq.realtor.xml.bind.LiteResProperty;
 import com.whereq.realtor.xml.bind.LiteResPropertyWrapper;
+import com.whereq.util.SendMail;
+import com.whereq.util.ValidationChecker;
 
 
 @Component(value="active_runner")
@@ -53,8 +55,6 @@ public class ActiveListingRunner {
 		List<ListingActivePO> poList = Lists.newArrayList();
 		System.out.println("============================================================");
 		System.out.println("Start: " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
-		System.out.println("Removing all active listing first, size: " + repository.count());
-		repository.deleteAll();
 		
 		//scan active resedentials
         JAXBContext jc = JAXBContext.newInstance(LiteResPropertyWrapper.class);
@@ -62,7 +62,22 @@ public class ActiveListingRunner {
         
         XMLInputFactory xif = XMLInputFactory.newFactory();
         String xmlpath = env.getProperty("ACTIVE_RES_PATH");
-        System.out.println("env: " + xmlpath);
+        System.out.println("env1: " + xmlpath);
+        if (!ValidationChecker.getInstance().checkInputFile(xmlpath))
+        	return;
+        
+        String xmlCondoPath = env.getProperty("ACTIVE_CND_PATH");
+        System.out.println("env2: " + xmlCondoPath);
+        if (!ValidationChecker.getInstance().checkInputFile(xmlCondoPath))
+        	return;
+        
+        //only when both active_condo and active_feehold are not empty, we clean up the table
+        
+		System.out.println("Removing all active listing first, size: " + repository.count());
+		repository.deleteAll();
+        
+        	
+        
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_freehold.xml"));
         XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
 
@@ -93,8 +108,8 @@ public class ActiveListingRunner {
         unmarshaller = jc.createUnmarshaller();
         xif = XMLInputFactory.newFactory();
         
-        String xmlCondoPath = env.getProperty("ACTIVE_CND_PATH");
-        System.out.println("env: " + xmlCondoPath);
+
+        
        // xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/crea/treb_feed/active/active_condo.xml"));
         xsr = xif.createXMLStreamReader(new StreamSource(xmlCondoPath));
         //xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/active_condo.xml"));
@@ -154,6 +169,8 @@ public class ActiveListingRunner {
 		return listingPO;
 		
 	}
+	
+
 	
 	
 	

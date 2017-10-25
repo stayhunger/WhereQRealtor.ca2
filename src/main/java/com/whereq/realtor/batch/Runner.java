@@ -39,6 +39,7 @@ import com.whereq.realtor.xml.bind.FullCondoPropertyWrapper;
 import com.whereq.realtor.xml.bind.FullListing;
 import com.whereq.realtor.xml.bind.FullResidentialProperty;
 import com.whereq.realtor.xml.bind.FullResidentialPropertyWrapper;
+import com.whereq.util.ValidationChecker;
 
 @Component(value="runner")
 public class Runner {
@@ -96,6 +97,9 @@ public class Runner {
         XMLInputFactory xif = XMLInputFactory.newFactory();
         String xmlpath = env.getProperty("FULL_RES_PATH");
         System.out.println("env: " + xmlpath);
+        if (!ValidationChecker.getInstance().checkInputFile(xmlpath))
+        	return;
+        
         XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
         //XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_residential.xml"));
 
@@ -150,6 +154,9 @@ public class Runner {
         xif = XMLInputFactory.newFactory();
         xmlpath = env.getProperty("FULL_CND_PATH");
         System.out.println("env: " + xmlpath);
+        if (!ValidationChecker.getInstance().checkInputFile(xmlpath))
+        	return;
+        
         xsr = xif.createXMLStreamReader(new StreamSource(xmlpath));
         //xsr = xif.createXMLStreamReader(new StreamSource("C:/tmp/full_condo.xml"));
 
